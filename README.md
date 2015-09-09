@@ -12,3 +12,7 @@ Once you've done that, you probably don't need stuff like "safe browsing" and si
 ---
 
 To apply these tweaks, type `about:config` in the URL bar, and use the config search bar to look up the individual settings.
+
+---
+
+Here's some useful discussion (and some really facepalming bullshit) said about my repo: https://news.ycombinator.com/item?id=10067797
