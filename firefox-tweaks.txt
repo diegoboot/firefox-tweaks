@@ -120,7 +120,7 @@ APPEARANCE
 Show full URLs (including 'http://'):
 browser.urlbar.trimURLs - false
 
-Revert to old search bar layout:
+Revert to old search bar layout - drop-down list instead of clunky icons:
 browser.search.showOneOffButtons - false
 
 Remove "(site) is now fullscreen" nag message and make it faster:
