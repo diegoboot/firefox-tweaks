@@ -45,6 +45,7 @@ browser.cache.use_new_backend - 1
 SECURITY/PRIVACY
 
 Disable WebRTC (extremely important for VPN users - WebRTC *will* leak your real IP address):
+WebRTC leak test (among other things): https://ipleak.net/
 media.peerconnection.enabled - false
 media.peerconnection.use_document_iceservers - false
 
