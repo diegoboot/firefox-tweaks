@@ -138,6 +138,10 @@ devtools.theme - dark
 
 BLOATWARE
 
+Disable Adobe 'Primetime Content Decryption Module' DRM malware (or use 'EME-free' builds of Firefox):
+media.gmp-eme-adobe.autoupdate - false
+media.gmp-eme-adobe.enabled - false
+
 Disable 'Reader Mode':
 reader.parse-on-load.enabled - false
 readinglist.server - (blank)
