@@ -7,6 +7,8 @@ https://www.privacytools.io/#about_config
 https://github.com/pyllyukko/user.js
 http://blog.joshnotes.com/customize-firefox-about-config/
 
+Further credits go to the fine tinfoil-hatted anons on 4/8/*chan who got me into compiling/dissecting their various infographics into a more modern - and paste-able - format.
+
 ----------------------------------------------------
 
 SPEED
