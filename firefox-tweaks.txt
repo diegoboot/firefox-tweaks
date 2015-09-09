@@ -117,7 +117,7 @@ xpinstall.signatures.required - false
 
 APPEARANCE
 
-Show full URLs:
+Show full URLs (including 'http://'):
 browser.urlbar.trimURLs - false
 
 Revert to old search bar layout:
