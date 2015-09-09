@@ -3,7 +3,7 @@ Further reading:
 http://kb.mozillazine.org/About:config_entries (Outdated)
 https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference (Incomplete as incomplete can be)
 http://thesimplecomputer.info/tscs-firefox-tweak-guide
-https://www.privacytools.io/#about_config
+https://www.privacytools.io/#about_config (Don't believe everything that's written there. No offense meant :^)
 https://github.com/pyllyukko/user.js
 http://blog.joshnotes.com/customize-firefox-about-config/
 
