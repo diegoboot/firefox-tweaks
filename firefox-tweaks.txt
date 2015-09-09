@@ -70,6 +70,10 @@ privacy.donottrackheader.enabled - true
 privacy.donottrackheader.value - 1
 privacy.trackingprotection.enabled - true
 
+Don't connect to remote links on hover:
+http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
+network.http.speculative-parallel-limit - 0
+
 Disable geolocation:
 geo.enabled - false
 geo.wifi.uri - (blank)
@@ -116,6 +120,10 @@ browser.search.showOneOffButtons - false
 Remove "(site) is now fullscreen" nag message and make it faster:
 full-screen-api.approval-required - false
 browser.fullscreen.animate - false
+
+Load searches from right-click context menu in background tab:
+https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
+browser.search.context.loadInBackground - true
 
 De-crap new tab page:
 browser.newtabpage.directory.ping - (blank)
