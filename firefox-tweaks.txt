@@ -74,6 +74,7 @@ privacy.trackingprotection.enabled - true
 
 Don't connect to remote links on hover:
 http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
+https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
 network.http.speculative-parallel-limit - 0
 
 Disable geolocation:
