@@ -177,4 +177,5 @@ social.toast-notifications.enabled - false
 social.whitelist - (blank)
 
 Disable PDF reader:
+(For crying out loud, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF, if you're going to enable this setting.)
 pdfjs.disabled - true
