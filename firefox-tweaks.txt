@@ -79,7 +79,7 @@ https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connectio
 network.http.speculative-parallel-limit - 0
 
 Disable geolocation:
-(Don't do this on mobile browsers, when you want Google Maps or similar to see your location.)
+(Don't do this on mobile browsers if you want Google Maps or similar to see your location.)
 geo.enabled - false
 geo.wifi.uri - (blank)
 
