@@ -53,6 +53,7 @@ http://kb.mozillazine.org/Network.proxy.socks_remote_dns
 network.proxy.socks_remote_dns - true
 
 Disable IPv6:
+Why IPv6 is dangerous for privacy: https://cryptostorm.org/viewtopic.php?t=6064
 http://kb.mozillazine.org/Network.dns.disableIPv6
 network.dns.disableIPv6 - true
 
