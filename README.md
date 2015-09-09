@@ -1,7 +1,7 @@
 # firefox-tweaks
 An attempt to make Firefox suck less. 
 
-Unlike other ressources out there, this repo isn't only about privacy/security, but also about UI/UX issues and getting rid of unnecessary bloatware.
+Unlike other resources out there, this repo isn't only about privacy/security, but also about browser speed, UI/UX issues, and getting rid of unnecessary bloatware.
 
 **Do not change any of these settings without understanding what they're doing. This repo isn't meant for inexperienced users.** 
 
