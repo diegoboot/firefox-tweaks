@@ -79,6 +79,7 @@ https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connectio
 network.http.speculative-parallel-limit - 0
 
 Disable geolocation:
+(Don't do this on mobile browsers, when you want Google Maps or similar to see your location.)
 geo.enabled - false
 geo.wifi.uri - (blank)
 
@@ -88,6 +89,7 @@ browser.search.geoSpecificDefaults.url - (blank)
 browser.search.geoip.url - (blank)
 
 Disable telemetry:
+(Not really that important of an issue, feel free to decide if you want to keep it enabled.)
 toolkit.telemetry.enabled - false
 toolkit.telemetry.server - (blank)
 
@@ -108,7 +110,7 @@ Disable WebGL:
 https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
 webgl.disabled - true
 
-Install unsigned addons in Aurora/Dev-Edition/etc (needed for Privacy Badger, HTTPS Everywhere, etc.):
+Install unsigned addons in Aurora/Dev-Edition/etc (needed for Privacy Badger, HTTPS Everywhere, etc. - don't be stupid and install just any random unsigned addon):
 xpinstall.signatures.required - false
 
 ----------------------------------------------------
