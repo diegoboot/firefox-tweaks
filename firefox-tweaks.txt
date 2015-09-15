@@ -13,7 +13,7 @@ Further credits go to the fine tinfoil-hatted anons on 4/8/*chan who got me into
 
 SPEED
 
-(Default values from Tor Browser 4.5.3:)
+  (Default values from Tor Browser 4.5.3:)
 
 network.http.pipelining – true
 network.http.pipelining.abtest – false
@@ -36,10 +36,10 @@ network.http.fast-fallback-to-IPv4 - true
 network.dns.disablePrefetch - true
 network.prefetch-next - true
 
-(End of Tor default values)
+  (End of Tor default values)
 
 Enable new cache:
-https://bugzilla.mozilla.org/show_bug.cgi?id=913807
+  https://bugzilla.mozilla.org/show_bug.cgi?id=913807
 browser.cache.use_new_backend - 1
 
 ----------------------------------------------------
@@ -47,26 +47,30 @@ browser.cache.use_new_backend - 1
 SECURITY/PRIVACY
 
 Disable WebRTC (extremely important for VPN users - WebRTC *will* leak your real IP address):
-WebRTC leak test (among other things): https://ipleak.net/
+  WebRTC leak test (among other things): https://ipleak.net/
 media.peerconnection.enabled - false
 media.peerconnection.use_document_iceservers - false
 
 Disable DNS proxy bypass:
-http://kb.mozillazine.org/Network.proxy.socks_remote_dns
+  http://kb.mozillazine.org/Network.proxy.socks_remote_dns
 network.proxy.socks_remote_dns - true
 
 Disable IPv6:
-Why IPv6 is dangerous for privacy: https://cryptostorm.org/viewtopic.php?t=6064
-http://kb.mozillazine.org/Network.dns.disableIPv6
+  Why IPv6 is dangerous for privacy: 
+  https://www.defcon.org/images/defcon-15/dc15-presentations/Lindqvist/Whitepaper/dc-15-lindqvist-WP.pdf
+  https://iapp.org/news/a/2011-09-09-facing-the-privacy-implications-of-ipv6
+  https://www.christopher-parsons.com/ipv6-and-the-future-of-privacy/
+  http://www.zdnet.com/article/security-versus-privacy-with-ipv6-deployment/
+  http://kb.mozillazine.org/Network.dns.disableIPv6
 network.dns.disableIPv6 - true
 
 Disable crash reporting:
-http://kb.mozillazine.org/Breakpad.reportURL
+  http://kb.mozillazine.org/Breakpad.reportURL
 breakpad.reportURL - (blank)
 
 Disable sending pings:
-http://kb.mozillazine.org/Browser.send_pings
-http://kb.mozillazine.org/Browser.send_pings.require_same_host
+  http://kb.mozillazine.org/Browser.send_pings
+  http://kb.mozillazine.org/Browser.send_pings.require_same_host
 browser.send_pings - false
 browser.send_pings.require_same_host - true
 
@@ -76,12 +80,12 @@ privacy.donottrackheader.value - 1
 privacy.trackingprotection.enabled - true
 
 Don't connect to remote links on hover:
-http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
-https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
+  http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
+  https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
 network.http.speculative-parallel-limit - 0
 
 Disable geolocation:
-(Don't do this on mobile browsers if you want Google Maps or similar to see your location.)
+  Don't do this on mobile browsers if you want Google Maps or similar to see your location.
 geo.enabled - false
 geo.wifi.uri - (blank)
 
@@ -91,7 +95,7 @@ browser.search.geoSpecificDefaults.url - (blank)
 browser.search.geoip.url - (blank)
 
 Disable telemetry:
-(Not really that important of an issue, feel free to decide if you want to keep it enabled.)
+  Not really that important of an issue, feel free to decide if you want to keep it enabled.
 toolkit.telemetry.enabled - false
 toolkit.telemetry.server - (blank)
 
@@ -109,7 +113,7 @@ browser.search
 gecko.handlerService
 
 Disable WebGL:
-https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
+  https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
 webgl.disabled - true
 
 Install unsigned addons in Aurora/Dev-Edition/etc (needed for Privacy Badger, HTTPS Everywhere, etc. - don't be stupid and install just any random unsigned addon):
@@ -126,12 +130,12 @@ Revert to old search bar layout - drop-down list instead of clunky icons:
 browser.search.showOneOffButtons - false
 
 Remove "(site) is now fullscreen" nag message and make it faster:
-(If you think this facilitates phising sites, you should not browse the internet at all.)
+  If you think this facilitates phising sites, you should not browse the internet at all.
 full-screen-api.approval-required - false
 browser.fullscreen.animate - false
 
 Load searches from right-click context menu in background tab:
-https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
+  https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
 browser.search.context.loadInBackground - true
 
 De-crap new tab page:
@@ -141,7 +145,7 @@ browser.newtabpage.enabled - false
 browser.newtabpage.enhanced - false
 
 Disable tab animation:
-http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
+  http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
 browser.tabs.animate – false
 
 Speed up security delay when installing add-ons:
@@ -157,8 +161,8 @@ devtools.theme - dark
 
 BLOATWARE
 
-Disable Adobe 'Primetime Content Decryption Module' DRM malware (or use 'EME-free' builds of Firefox):
-http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
+Disable Adobe 'Primetime Content Decryption Module' DRM malware (or simply use 'EME-free' builds of Firefox):
+  http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
 media.gmp-eme-adobe.autoupdate - false
 media.gmp-eme-adobe.enabled - false
 
@@ -172,7 +176,7 @@ browser.pocket.enabled - false
 browser.pocket.site - (blank)
 
 Disable 'Firefox Hello':
-https://www.mozilla.org/en-US/privacy/firefox-hello/
+  https://www.mozilla.org/en-US/privacy/firefox-hello/
 loop.enabled - false
 
 Disable 'Social' crap:
@@ -183,5 +187,5 @@ social.toast-notifications.enabled - false
 social.whitelist - (blank)
 
 Disable PDF reader:
-(For crying out loud, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF, if you're going to enable this setting.)
+  For crying out loud, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF, if you're going to enable this setting.
 pdfjs.disabled - true
