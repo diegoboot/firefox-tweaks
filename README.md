@@ -1,7 +1,7 @@
 # firefox-tweaks
 An attempt to make Firefox suck less. 
 
-Unlike other resources out there, this repo isn't mainly about privacy/security, but more generally about browser speed, UI/UX issues, and getting rid of unnecessary bloatware. If you're interested in security only, check out this fine repository: https://github.com/pyllyukko/user.js
+Unlike other resources out there, this repo isn't mainly about privacy/security<sup>1)</sup>, but more generally about browser speed, UI/UX issues, and getting rid of unnecessary bloatware.
 
 **Do not change any of these settings without understanding what they're doing. This repo isn't meant for inexperienced users.** 
 
@@ -15,4 +15,8 @@ To apply these tweaks, type `about:config` in the URL bar, and use the config se
 
 ---
 
-Here's some useful discussion (and some really facepalming bullshit) said about my repo: https://news.ycombinator.com/item?id=10067797
+Here's some useful discussion (and some really facepalming bullshit) about this repo: https://news.ycombinator.com/item?id=10067797
+
+---
+
+1) If you're interested in security only, check out this fine repository: https://github.com/pyllyukko/user.js
