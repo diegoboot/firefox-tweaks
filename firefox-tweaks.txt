@@ -161,8 +161,10 @@ devtools.theme - dark
 
 BLOATWARE
 
-Disable Adobe 'Primetime Content Decryption Module' DRM malware (or simply use 'EME-free' builds of Firefox):
+Disable Adobe 'Primetime Content Decryption Module' DRM malware:
   http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
+  Or simply use 'EME-free' builds of Firefox:
+  https://ftp.mozilla.org/pub/firefox/releases/latest/win32-EME-free/en-US/
 media.gmp-eme-adobe.autoupdate - false
 media.gmp-eme-adobe.enabled - false
 
