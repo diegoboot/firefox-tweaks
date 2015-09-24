@@ -130,7 +130,7 @@ Revert to old search bar layout - drop-down list instead of clunky icons:
 browser.search.showOneOffButtons - false
 
 Remove "(site) is now fullscreen" nag message and make it faster:
-  If you think this facilitates phising sites, you should not browse the internet at all.
+  If you think this "facilitates phishing sites", you should not browse the internet at all.
 full-screen-api.approval-required - false
 browser.fullscreen.animate - false
 
