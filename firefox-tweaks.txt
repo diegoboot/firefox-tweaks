@@ -136,8 +136,12 @@ browser.search.context.loadInBackground;true
 
 Remove "(site) is now fullscreen" nag message and make it faster:
   If you think this "facilitates phishing sites", you should not browse the internet at all.
-  This appears to be not working in FF43 anymore. FFS.
+  Before FF43:
 full-screen-api.approval-required;false
+browser.fullscreen.animate;false
+  Since FF43:
+full-screen-api.warning.delay;0
+full-screen-api.warning.timeout;0
 browser.fullscreen.animate;false
 
 Get rid of "Do you really want to leave this site?" popups:
