@@ -129,8 +129,8 @@ browser.urlbar.trimURLs;false
 Get rid of the useless "Visit (site)" and "(keyword) - search with (engine)" dropdown in the URL bar (since FF43):
 browser.urlbar.unifiedcomplete;false
 
-Revert to old search bar layout - drop-down list instead of clunky icons:
-  This choice was removed in FF43: http://techdows.com/2015/09/mozilla-removes-the-old-search-ui-from-firefox.html
+Revert to old search bar layout - drop-down list instead of icons:
+  This choice was removed in FF43 - use the Classic Theme Restorer addon if you want it back.
 browser.search.showOneOffButtons;false
 
 Load searches from right-click context menu in background tab:
