@@ -15,32 +15,32 @@ SPEED
 
   (Default values from Tor Browser 4.5.3:)
 
-network.http.pipelining – true
-network.http.pipelining.abtest – false
-network.http.pipelining.aggressive – true
-network.http.pipelining.max-optimistic-requests – 3
-network.http.pipelining.maxrequests – 12
-network.http.pipelining.maxsize – 300000
-network.http.pipelining.read-timeout – 60000
-network.http.pipelining.reschedule-on-timeout – true
-network.http.pipelining.reschedule-timeout – 15000
-network.http.pipelining.ssl – true
-network.http.proxy.pipelining - true
+network.http.pipelining;true
+network.http.pipelining.abtest;false
+network.http.pipelining.aggressive;true
+network.http.pipelining.max-optimistic-requests;3
+network.http.pipelining.maxrequests;12
+network.http.pipelining.maxsize;300000
+network.http.pipelining.read-timeout;60000
+network.http.pipelining.reschedule-on-timeout;true
+network.http.pipelining.reschedule-timeout;15000
+network.http.pipelining.ssl;true
+network.http.proxy.pipelining;true
 
-network.http.max-connections - 256
-network.http.max-persistent-connections-per-proxy - 256
-network.http.max-persistent-connections-per-server - 6
+network.http.max-connections;256
+network.http.max-persistent-connections-per-proxy;256
+network.http.max-persistent-connections-per-server;6
 
-network.http.redirection-limit - 20
-network.http.fast-fallback-to-IPv4 - true
-network.dns.disablePrefetch - true
-network.prefetch-next - true
+network.http.redirection-limit;20
+network.http.fast-fallback-to-IPv4;true
+network.dns.disablePrefetch;true
+network.prefetch-next;true
 
   (End of Tor default values)
 
 Enable new cache:
   https://bugzilla.mozilla.org/show_bug.cgi?id=913807
-browser.cache.use_new_backend - 1
+browser.cache.use_new_backend;1
 
 ----------------------------------------------------
 
@@ -48,12 +48,12 @@ SECURITY/PRIVACY
 
 Disable WebRTC (extremely important for VPN users - WebRTC *will* leak your real IP address):
   WebRTC leak test (among other things): https://ipleak.net/
-media.peerconnection.enabled - false
-media.peerconnection.use_document_iceservers - false
+media.peerconnection.enabled;false
+media.peerconnection.use_document_iceservers;false
 
 Disable DNS proxy bypass:
   http://kb.mozillazine.org/Network.proxy.socks_remote_dns
-network.proxy.socks_remote_dns - true
+network.proxy.socks_remote_dns;true
 
 Disable IPv6:
   Why IPv6 is dangerous for privacy: 
@@ -62,48 +62,48 @@ Disable IPv6:
   https://www.christopher-parsons.com/ipv6-and-the-future-of-privacy/
   http://www.zdnet.com/article/security-versus-privacy-with-ipv6-deployment/
   http://kb.mozillazine.org/Network.dns.disableIPv6
-network.dns.disableIPv6 - true
+network.dns.disableIPv6;true
 
 Disable crash reporting:
   http://kb.mozillazine.org/Breakpad.reportURL
-breakpad.reportURL - (blank)
+breakpad.reportURL;(blank)
 
 Disable sending pings:
   http://kb.mozillazine.org/Browser.send_pings
   http://kb.mozillazine.org/Browser.send_pings.require_same_host
-browser.send_pings - false
-browser.send_pings.require_same_host - true
+browser.send_pings;false
+browser.send_pings.require_same_host;true
 
 Enable tracking protection:
-privacy.donottrackheader.enabled - true
-privacy.donottrackheader.value - 1
-privacy.trackingprotection.enabled - true
+privacy.donottrackheader.enabled;true
+privacy.donottrackheader.value;1
+privacy.trackingprotection.enabled;true
 
 Don't connect to remote links on hover:
   http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
   https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
-network.http.speculative-parallel-limit - 0
+network.http.speculative-parallel-limit;0
 
 Disable geolocation:
   Don't do this on mobile browsers if you want Google Maps or similar to see your location.
-geo.enabled - false
-geo.wifi.uri - (blank)
+geo.enabled;false
+geo.wifi.uri;(blank)
 
 Disable geotargeting:
-browser.search.geoSpecificDefaults - false
-browser.search.geoSpecificDefaults.url - (blank)
-browser.search.geoip.url - (blank)
+browser.search.geoSpecificDefaults;false
+browser.search.geoSpecificDefaults.url;(blank)
+browser.search.geoip.url;(blank)
 
 Disable telemetry:
   Not really that important of an issue, feel free to decide if you want to keep it enabled.
-toolkit.telemetry.enabled - false
-toolkit.telemetry.server - (blank)
+toolkit.telemetry.enabled;false
+toolkit.telemetry.server;(blank)
 
 Disable 'safe browsing' aka. Google tracking/logging:
-browser.safebrowsing.downloads.enabled - false
-browser.safebrowsing.downloads.remote.enabled - false
-browser.safebrowsing.enabled - false
-browser.safebrowsing.malware.enabled - false
+browser.safebrowsing.downloads.enabled;false
+browser.safebrowsing.downloads.remote.enabled;false
+browser.safebrowsing.enabled;false
+browser.safebrowsing.malware.enabled;false
 
 Type 'google' in about:config and delete most of the links (the ones that won't break anything, that's up to you).
 Also search through these to delete links from:
@@ -114,49 +114,54 @@ gecko.handlerService
 
 Disable WebGL:
   https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
-webgl.disabled - true
+webgl.disabled;true
 
 Install unsigned addons in Aurora/Dev-Edition/etc (needed for Privacy Badger, HTTPS Everywhere, etc. - don't be stupid and install just any random unsigned addon):
-xpinstall.signatures.required - false
+xpinstall.signatures.required;false
 
 ----------------------------------------------------
 
 APPEARANCE
 
 Show full URLs (including 'http://'):
-browser.urlbar.trimURLs - false
+browser.urlbar.trimURLs;false
 
 Revert to old search bar layout - drop-down list instead of clunky icons:
   This choice was removed in FF43: http://techdows.com/2015/09/mozilla-removes-the-old-search-ui-from-firefox.html
-browser.search.showOneOffButtons - false
-
-Remove "(site) is now fullscreen" nag message and make it faster:
-  If you think this "facilitates phishing sites", you should not browse the internet at all.
-full-screen-api.approval-required - false
-browser.fullscreen.animate - false
+browser.search.showOneOffButtons;false
 
 Load searches from right-click context menu in background tab:
   https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
-browser.search.context.loadInBackground - true
+browser.search.context.loadInBackground;true
+
+Remove "(site) is now fullscreen" nag message and make it faster:
+  If you think this "facilitates phishing sites", you should not browse the internet at all.
+  This appears to be not working in FF43 anymore. FFS.
+full-screen-api.approval-required;false
+browser.fullscreen.animate;false
+
+Get rid of "Do you really want to leave this site?" popups:
+  https://support.mozilla.org/en-US/questions/1043508
+dom.disable_beforeunload;true
 
 De-crap new tab page:
-browser.newtabpage.directory.ping - (blank)
-browser.newtabpage.directory.source - (blank)
-browser.newtabpage.enabled - false
-browser.newtabpage.enhanced - false
+browser.newtabpage.directory.ping;(blank)
+browser.newtabpage.directory.source;(blank)
+browser.newtabpage.enabled;false
+browser.newtabpage.enhanced;false
 
 Disable tab animation:
   http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
-browser.tabs.animate – false
+browser.tabs.animate;false
 
 Speed up security delay when installing add-ons:
-security.dialog_enable_delay - 400
+security.dialog_enable_delay;400
 
 Enable eyedropper in dev tools:
-devtools.command-button-eyedropper.enabled - true
+devtools.command-button-eyedropper.enabled;true
 
 Dark theme for dev tools:
-devtools.theme - dark
+devtools.theme;dark
 
 ----------------------------------------------------
 
@@ -166,29 +171,29 @@ Disable Adobe 'Primetime Content Decryption Module' DRM malware:
   http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
   Or simply use 'EME-free' builds of Firefox:
   https://ftp.mozilla.org/pub/firefox/releases/latest/win32-EME-free/en-US/
-media.gmp-eme-adobe.autoupdate - false
-media.gmp-eme-adobe.enabled - false
+media.gmp-eme-adobe.autoupdate;false
+media.gmp-eme-adobe.enabled;false
 
 Disable 'Reader Mode':
-reader.parse-on-load.enabled - false
-readinglist.server - (blank)
+reader.parse-on-load.enabled;false
+readinglist.server;(blank)
 
 Disable 'Pocket':
-browser.pocket.api - (blank)
-browser.pocket.enabled - false
-browser.pocket.site - (blank)
+browser.pocket.api;(blank)
+browser.pocket.enabled;false
+browser.pocket.site;(blank)
 
 Disable 'Firefox Hello':
   https://www.mozilla.org/en-US/privacy/firefox-hello/
-loop.enabled - false
+loop.enabled;false
 
 Disable 'Social' crap:
-social.directories - (blank)
-social.remote-install.enabled - false
-social.shareDirectory - (blank)
-social.toast-notifications.enabled - false
-social.whitelist - (blank)
+social.directories;(blank)
+social.remote-install.enabled;false
+social.shareDirectory;(blank)
+social.toast-notifications.enabled;false
+social.whitelist;(blank)
 
 Disable PDF reader:
   For crying out loud, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF, if you're going to enable this setting.
-pdfjs.disabled - true
+pdfjs.disabled;true
