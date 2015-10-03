@@ -52,6 +52,8 @@ media.peerconnection.enabled;false
 media.peerconnection.use_document_iceservers;false
 
 Disable DNS proxy bypass:
+  https://superuser.com/questions/103593/how-to-do-dns-through-a-proxy-in-firefox
+  https://bugzilla.mozilla.org/show_bug.cgi?id=134105
   http://kb.mozillazine.org/Network.proxy.socks_remote_dns
 network.proxy.socks_remote_dns;true
 
