@@ -3,7 +3,7 @@ An attempt to make Firefox suck less.
 
 Unlike other resources out there, this repo isn't only about privacy/security, but covers issues like browser speed, UI/UX issues, and disabling/removing unnecessary bloatware as well. Some - in my opinion - overly restrictive or annoying "best security practices" have been omitted on purpose: I don't want my main browser to feel like it's in "Private Window" mode all the time. For that approach, Tor Browser would be a better choice than standard Firefox anyways. I want my main browser to remember its history, passwords, form fields, and so on. YMMV.
 
-This repo is meant as an additional resource to improve aspects of Firefox, after you've done all the standard steps to ensure a base level of security. Have some basic security/privacy addons installed (uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc.), run a decent firewall, maybe browse over a VPN, maybe have a decent hosts file, and so on. And, most important of all: *use your brain* while browsing, don't just click on random stuff. 
+This repo is meant as an additional resource to improve aspects of Firefox, after you've done all the standard steps to ensure a base level of security. Have some basic security/privacy addons installed (uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc.), run a decent firewall, maybe connect over a VPN, maybe have a decent hosts file, and so on. And, most important of all: *use your brain*, don't just click on random stuff. 
 
 Once you've done that, you probably don't need stuff like "safe browsing" and similar, which gives a somewhat false sense of security (and constantly sends data about your browsing habits to Google).
 
