@@ -51,7 +51,7 @@ media.peerconnection.enabled, false
 media.peerconnection.use_document_iceservers, false
 media.navigator.enabled, false
 media.getusermedia.screensharing.enabled, false
-media.getusermedia.screensharing.allowed_domains, ''
+media.getusermedia.screensharing.allowed_domains, (blank)
 
 
 Disable DNS proxy bypass:
@@ -72,7 +72,7 @@ network.http.fast-fallback-to-IPv4, true
 
 Disable crash reporting:
   http://kb.mozillazine.org/Breakpad.reportURL
-breakpad.reportURL, ''
+breakpad.reportURL, (blank)
 
 Disable sending pings:
   http://kb.mozillazine.org/Browser.send_pings
@@ -93,29 +93,29 @@ network.http.speculative-parallel-limit, 0
 Disable geolocation:
   Don't do this on mobile browsers if you want Google Maps or similar to see your location.
 geo.enabled, false
-geo.wifi.uri, ''
+geo.wifi.uri, (blank)
 
 Disable geotargeting:
 browser.search.geoSpecificDefaults, false
-browser.search.geoSpecificDefaults.url, ''
-browser.search.geoip.url, ''
+browser.search.geoSpecificDefaults.url, (blank)
+browser.search.geoip.url, (blank)
 
 Disable telemetry:
   https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
 toolkit.telemetry.archive.enabled, false
-toolkit.telemetry.cachedClientID, ''
+toolkit.telemetry.cachedClientID, (blank)
 toolkit.telemetry.enabled, false
-toolkit.telemetry.previousBuildID, ''
+toolkit.telemetry.previousBuildID, (blank)
 toolkit.telemetry.reportingpolicy.firstRun, false
-toolkit.telemetry.server, ''
+toolkit.telemetry.server, (blank)
 toolkit.telemetry.unified, false
 
 Disable health report:
   https://gecko.readthedocs.org/en/latest/services/healthreport/healthreport/index.html#legal-and-privacy-concerns
-datareporting.healthreport.about.reportUrl, ''
-datareporting.healthreport.about.reportUrlUnified, ''
-datareporting.healthreport.documentServerURI, ''
-datareporting.healthreport.infoURL, ''
+datareporting.healthreport.about.reportUrl, (blank)
+datareporting.healthreport.about.reportUrlUnified, (blank)
+datareporting.healthreport.documentServerURI, (blank)
+datareporting.healthreport.infoURL, (blank)
 datareporting.healthreport.logging.consoleEnabled, false
 datareporting.healthreport.service.enabled, false
 datareporting.healthreport.service.firstRun, false
@@ -125,58 +125,58 @@ datareporting.policy.dataSubmissionEnabled.v2, false
 
 Disable "Heartbeat"
   https://wiki.mozilla.org/Advocacy/heartbeat
-browser.selfsupport.url, ''
+browser.selfsupport.url, (blank)
 
 Disable "safe browsing" aka. Google tracking/logging:
   (Prefs apparently deprecated in FF43 are commented out)
-browser.safebrowsing.appRepURL, ''
+browser.safebrowsing.appRepURL, (blank)
 browser.safebrowsing.downloads.enabled, false
 browser.safebrowsing.downloads.remote.enabled, false
 browser.safebrowsing.enabled, false
-browser.safebrowsing.gethashURL, ''
+browser.safebrowsing.gethashURL, (blank)
 browser.safebrowsing.malware.enabled, false
-browser.safebrowsing.malware.reportURL, ''
-browser.safebrowsing.provider.google.appRepURL, ''
-browser.safebrowsing.provider.google.gethashURL, ''
-browser.safebrowsing.provider.google.lists, ''
-browser.safebrowsing.provider.google.reportURL, ''
-browser.safebrowsing.provider.google.updateURL, ''
-browser.safebrowsing.provider.mozilla.gethashURL, ''
-browser.safebrowsing.provider.mozilla.updateURL, ''
-browser.safebrowsing.reportErrorURL, ''
-browser.safebrowsing.reportGenericURL, ''
-browser.safebrowsing.reportMalwareErrorURL, ''
-browser.safebrowsing.reportMalwareMistakeURL, ''
-browser.safebrowsing.reportMalwareURL, ''
-browser.safebrowsing.reportPhishMistakeURL, ''
-browser.safebrowsing.reportPhishURL, ''
-browser.safebrowsing.reportURL, ''
-browser.safebrowsing.updateURL, ''
-urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey, ''
+browser.safebrowsing.malware.reportURL, (blank)
+browser.safebrowsing.provider.google.appRepURL, (blank)
+browser.safebrowsing.provider.google.gethashURL, (blank)
+browser.safebrowsing.provider.google.lists, (blank)
+browser.safebrowsing.provider.google.reportURL, (blank)
+browser.safebrowsing.provider.google.updateURL, (blank)
+browser.safebrowsing.provider.mozilla.gethashURL, (blank)
+browser.safebrowsing.provider.mozilla.updateURL, (blank)
+browser.safebrowsing.reportErrorURL, (blank)
+browser.safebrowsing.reportGenericURL, (blank)
+browser.safebrowsing.reportMalwareErrorURL, (blank)
+browser.safebrowsing.reportMalwareMistakeURL, (blank)
+browser.safebrowsing.reportMalwareURL, (blank)
+browser.safebrowsing.reportPhishMistakeURL, (blank)
+browser.safebrowsing.reportPhishURL, (blank)
+browser.safebrowsing.reportURL, (blank)
+browser.safebrowsing.updateURL, (blank)
+urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey, (blank)
 
 Remove feed content handlers:
   http://kb.mozillazine.org/Browser.contentHandlers.types.*.uri
   Yahoo RSS handler:
-browser.contentHandlers.types.0.title, ''
-browser.contentHandlers.types.0.type, ''
-browser.contentHandlers.types.0.uri, ''
+browser.contentHandlers.types.0.title, (blank)
+browser.contentHandlers.types.0.type, (blank)
+browser.contentHandlers.types.0.uri, (blank)
 
 Remove website protocol handlers:
   http://kb.mozillazine.org/Gecko.handlerService.schemes.%28protocol%29.*.uriTemplate
   Mibbit:
-gecko.handlerService.schemes.irc.0.name, ''
-gecko.handlerService.schemes.irc.0.uriTemplate, ''
-gecko.handlerService.schemes.ircs.0.name, ''
-gecko.handlerService.schemes.ircs.0.uriTemplate, ''
+gecko.handlerService.schemes.irc.0.name, (blank)
+gecko.handlerService.schemes.irc.0.uriTemplate, (blank)
+gecko.handlerService.schemes.ircs.0.name, (blank)
+gecko.handlerService.schemes.ircs.0.uriTemplate, (blank)
   Yahoo Mail:
-gecko.handlerService.schemes.mailto.0.name, ''
-gecko.handlerService.schemes.mailto.0.uriTemplate, ''
+gecko.handlerService.schemes.mailto.0.name, (blank)
+gecko.handlerService.schemes.mailto.0.uriTemplate, (blank)
   Gmail:
-gecko.handlerService.schemes.mailto.1.name, ''
-gecko.handlerService.schemes.mailto.1.uriTemplate, ''
+gecko.handlerService.schemes.mailto.1.name, (blank)
+gecko.handlerService.schemes.mailto.1.uriTemplate, (blank)
   30 Boxes:
-gecko.handlerService.schemes.webcal.0.name, ''
-gecko.handlerService.schemes.webcal.0.uriTemplate, ''
+gecko.handlerService.schemes.webcal.0.name, (blank)
+gecko.handlerService.schemes.webcal.0.uriTemplate, (blank)
 
 Disable WebGL:
   https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
@@ -254,8 +254,8 @@ dom.disable_window_open_feature.resizable, true
 De-crap new tab page, get rid of ads:
 browser.newtab.preload, false
 browser.newtab.url, 'about:blank'
-browser.newtabpage.directory.ping, ''
-browser.newtabpage.directory.source, ''
+browser.newtabpage.directory.ping, (blank)
+browser.newtabpage.directory.source, (blank)
 browser.newtabpage.enabled, false
 browser.newtabpage.enhanced, false
 browser.newtabpage.introShown, true
@@ -301,31 +301,31 @@ browser.eme.ui.enabled, false
 
 Disable "Reader Mode":
 reader.parse-on-load.enabled, false
-readinglist.server, ''
+readinglist.server, (blank)
 
 Disable "Pocket":
   http://venturebeat.com/2015/06/09/mozilla-responds-to-firefox-user-backlash-over-pocket-integration/
-browser.pocket.api, ''
+browser.pocket.api, (blank)
 browser.pocket.enabled, false
-browser.pocket.oAuthConsumerKey, ''
-browser.pocket.site, ''
+browser.pocket.oAuthConsumerKey, (blank)
+browser.pocket.site, (blank)
 
 Disable "Firefox Hello" WebRTC malware:
   https://www.mozilla.org/en-US/privacy/firefox-hello/
-loop.CSP, ''
+loop.CSP, (blank)
 loop.enabled, false
-loop.feedback.baseUrl, ''
-loop.oauth.google.scope, ''
-loop.server, ''
+loop.feedback.baseUrl, (blank)
+loop.oauth.google.scope, (blank)
+loop.server, (blank)
 
 Disable "Social" crap:
   http://www.ghacks.net/2013/04/10/mozilla-adds-cliqz-msnnow-and-mixi-as-social-providers-to-firefox/
-social.directories, ''
+social.directories, (blank)
 social.remote-install.enabled, false
 social.share.activationPanelEnabled, false
-social.shareDirectory, ''
+social.shareDirectory, (blank)
 social.toast-notifications.enabled, false
-social.whitelist, ''
+social.whitelist, (blank)
 
 Disable integrated PDF reader:
   If you're going to use an external PDF reader, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF.
@@ -334,7 +334,7 @@ pdfjs.enableWebGL, false
 
 Disable "Snippets" (Mozilla content shown on about:home):
   https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
-browser.aboutHomeSnippets.updateUrl, ''
+browser.aboutHomeSnippets.updateUrl, (blank)
 
 Disable various useless and/or intrusive web APIs:
   https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
