@@ -11,7 +11,7 @@ Once you've done that, you probably don't need stuff like "safe browsing" and si
 
 ---
 
-To apply these tweaks, type `about:config` in the URL bar, and use the config search bar to look up the individual settings found in `firefox-tweaks.txt`. Or put the `user.js` file into your Firefox profile folder, if you're sure you want to add all the preferences at once.
+To apply these tweaks, type `about:config` in the URL bar, and use the config search bar to look up the individual settings found in `user.js`. Or simply put the file into your Firefox profile folder, if you're **really** sure you want to add all the preferences at once.
 
 ---
 
