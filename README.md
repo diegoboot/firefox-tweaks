@@ -1,5 +1,7 @@
 # firefox-tweaks
-An attempt to make Firefox suck less. 
+An attempt to make Firefox suck less.
+
+---
 
 Unlike other resources out there, this repo isn't only about privacy/security, but covers issues like browser speed, UI/UX issues, and disabling/removing unnecessary bloatware as well.
 
@@ -8,6 +10,8 @@ Some - in my opinion - overly restrictive or annoying "best security practices" 
 This repo is meant as an additional resource to improve aspects of Firefox, after you've done all the standard steps to ensure a base level of security. Have some basic security/privacy addons installed (uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc.), run a decent firewall, maybe connect over a VPN, maybe have a decent hosts file, and so on. And, most important of all: *use your brain*, don't just click on random stuff. 
 
 Once you've done that, you probably don't need stuff like "safe browsing" and similar, which gives a somewhat false sense of security (and constantly sends data about your browsing habits to Google).
+
+---
 
 None of the settings in this repository are blindly copied over from other sources. Each setting has been tested by me, and deprecated settings are removed whenever necessary. I'm trying to keep the cruft level as low as possible, only supporting settings that actually work in current Firefox versions.
 
