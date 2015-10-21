@@ -3,7 +3,7 @@ An attempt to make Firefox suck less.
 
 ---
 
-Unlike other resources out there, this repo isn't only about privacy/security, but covers issues like browser speed, UI/UX issues, and disabling/removing unnecessary bloatware as well.
+Unlike other resources out there, this repo isn't only about privacy/security, but covers issues like browser speed, UI/UX annoyances, and disabling/removing unnecessary bloatware as well.
 
 Some - in my opinion - overly restrictive or annoying "best security practices" have been omitted on purpose: I don't want my main browser to feel like it's in "Private Window" mode all the time. For that approach, Tor Browser would be a better choice than standard Firefox anyways. I want my main browser to remember its history, passwords, form fields, and so on. YMMV.
 
