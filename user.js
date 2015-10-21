@@ -192,6 +192,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 // Browser test sites: 
     // https://www.ssllabs.com/ssltest/viewMyClient.html
     // https://www.howsmyssl.com/
+    // https://badssl.com/
 
 // Block mixed content:
 user_pref("security.mixed_content.block_active_content", true); // (eg. insecure CSS or JS on a HTTPS page - this is enabled by default)
