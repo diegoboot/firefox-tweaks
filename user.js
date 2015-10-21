@@ -9,9 +9,6 @@
 // http://thesimplecomputer.info/tscs-firefox-tweak-guide
 // http://blog.joshnotes.com/customize-firefox-about-config/
 // https://github.com/pyllyukko/user.js (Contains possibly deprecated preference settings)
-// https://github.com/JamborJan/firefox-tweaks (A fork of dfkt/firefox-tweaks)
-// https://github.com/j127/Better-Firefox (A fork of dfkt/firefox-tweaks)
-// About user.js: http://kb.mozillazine.org/User.js_file
 
 // ----------------------------------------------------
 // SPEED / PERFORMANCE
@@ -54,11 +51,6 @@ user_pref("media.navigator.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("media.getusermedia.screensharing.allowed_domains", "");
 
-// Disable DNS proxy bypass:
-    // https://superuser.com/questions/103593/how-to-do-dns-through-a-proxy-in-firefox
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=134105
-user_pref("network.proxy.socks_remote_dns", true); // http://kb.mozillazine.org/Network.proxy.socks_remote_dns
-
 // Disable IPv6:
     // Some texts on why IPv6 is no good for privacy: 
     // https://www.defcon.org/images/defcon-15/dc15-presentations/Lindqvist/Whitepaper/dc-15-lindqvist-WP.pdf
@@ -68,18 +60,29 @@ user_pref("network.proxy.socks_remote_dns", true); // http://kb.mozillazine.org/
 user_pref("network.dns.disableIPv6", true);
     // http://knowipv6.digitalelement.com/?p=66
 user_pref("network.http.fast-fallback-to-IPv4", true);
+// Disable sending HTML5 pings:
+user_pref("browser.send_pings", false); // http://kb.mozillazine.org/Browser.send_pings
+user_pref("browser.send_pings.require_same_host", true); // http://kb.mozillazine.org/Browser.send_pings.require_same_host
 
-// Disable DNS/link prefetching:
+// Disable DNS proxy bypass:
+    // https://superuser.com/questions/103593/how-to-do-dns-through-a-proxy-in-firefox
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=134105
+user_pref("network.proxy.socks_remote_dns", true); // http://kb.mozillazine.org/Network.proxy.socks_remote_dns
+
+// Disable DNS prefetching:
     // http://www.ghacks.net/2013/04/27/firefox-prefetching-what-you-need-to-know/
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
+
+// Disable link prefetching:
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
 
-// Disable sending HTML5 pings:
-user_pref("browser.send_pings", false); // http://kb.mozillazine.org/Browser.send_pings
-user_pref("browser.send_pings.require_same_host", true); // http://kb.mozillazine.org/Browser.send_pings.require_same_host
+// Don't connect to remote links on hover:
+    // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
+    // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
+user_pref("network.http.speculative-parallel-limit", 0);
 
 // Enable tracking protection:
     // Shady advertisers won't honor these settings, so make sure you use Privacy Badger, Disconnect, or similar addons.
@@ -90,11 +93,6 @@ user_pref("privacy.trackingprotection.enabled", true);
 // Show Punycode for international domain names, prevent some phishing attempts:
     // http://kb.mozillazine.org/Network.IDN_show_punycode
 user_pref("network.IDN_show_punycode", true);
-
-// Don't connect to remote links on hover:
-    // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
-    // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
-user_pref("network.http.speculative-parallel-limit", 0);
 
 // Prevent sites from sniffing clipboard content:
     // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
@@ -197,7 +195,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 
 // Block mixed content:
 user_pref("security.mixed_content.block_active_content", true); // (eg. insecure CSS or JS on a HTTPS page - this is enabled by default)
-user_pref("security.mixed_content.block_display_content", true); // ("passive" content - eg. insecure images on a HTTPS page)
+// user_pref("security.mixed_content.block_display_content", true); // ("passive" content - eg. insecure images on a HTTPS page)
 
 // Enforce public key pinning for CAs
     // https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning
@@ -206,7 +204,7 @@ user_pref("security.cert_pinning.enforcement_level", 2);
 // General SSL/TLS preferences:
 user_pref("security.ssl.errorReporting.enabled", false); // https://gecko.readthedocs.org/en/latest/browser/base/sslerrorreport/preferences.html
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true); // https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken
-user_pref("security.tls.unrestricted_rc4_fallback", false);
+user_pref("security.tls.unrestricted_rc4_fallback", false); // No thanks, I'd rather fall back to ROT13...
 
 // Cipher suites:
     // Copied from https://github.com/pyllyukko/user.js/blob/master/user.js - possibly outdated information.
@@ -246,7 +244,7 @@ user_pref("browser.urlbar.unifiedcomplete", false);
 user_pref("browser.search.context.loadInBackground", true);
 
 // Remove "(site) is now fullscreen" nag message:
-    // If you fear this might "facilitate phishing", you probably should not browse the internet at all.
+    // If you fear this might "facilitate phishing", you might not want to be on the internet at all.
     // Before FF43:
 // user_pref("full-screen-api.approval-required", false);
     // Since FF43:
@@ -298,12 +296,13 @@ user_pref("accessibility.typeaheadfind", true); // http://kb.mozillazine.org/Acc
 user_pref("accessibility.typeaheadfind.flashBar", 0); // http://kb.mozillazine.org/Accessibility.typeaheadfind.flashBar
 
 // Better legible default fonts (for Windows, at least - might require ttf-mscorefonts on *nix):
-user_pref("font.name.monospace.x-unicode", "Lucida Console");
-user_pref("font.name.monospace.x-western", "Lucida Console");
-user_pref("font.name.sans-serif.x-unicode", "Segoe UI");
-user_pref("font.name.sans-serif.x-western", "Segoe UI");
-user_pref("font.name.serif.x-unicode", "Georgia");
-user_pref("font.name.serif.x-western", "Georgia");
+    // As an alternative, the free Ubuntu and Droid font families are pretty good as well.
+// user_pref("font.name.monospace.x-unicode", "Lucida Console");
+// user_pref("font.name.monospace.x-western", "Lucida Console");
+// user_pref("font.name.sans-serif.x-unicode", "Segoe UI");
+// user_pref("font.name.sans-serif.x-western", "Segoe UI");
+// user_pref("font.name.serif.x-unicode", "Georgia");
+// user_pref("font.name.serif.x-western", "Georgia");
 
 // ----------------------------------------------------
 // DEV TOOLS
@@ -327,11 +326,11 @@ user_pref("xpinstall.signatures.required", false);
 // Speed up security delay when installing add-ons:
 user_pref("security.dialog_enable_delay", 400);
 
-// Ask to activate Flash, and don't nag about missing Flash plugin:
+// If installed - ask to activate Flash. If not - don't nag about missing Flash plugin:
 user_pref("plugin.state.flash", 1);
 user_pref("plugins.notifyMissingFlash", false);
 
-// Disable metadata check:
+// Disable metadata check phone-home:
     // https://wiki.mozilla.org/Extension_Manager:Update_Checking
 user_pref("extensions.getAddons.cache.enabled", false);
 
@@ -342,7 +341,7 @@ user_pref("extensions.getAddons.cache.enabled", false);
 // Disable EME, Adobe "Primetime Content Decryption Module" DRM malware:
     // http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
     // Additionally, you might want to delete all traces of "gmp-eme" from your Firefox profile folder.
-    // Or simply use "EME-free" builds of Firefox: https://ftp.mozilla.org/pub/firefox/releases/latest/win32-EME-free/en-US/
+    // Or simply use "EME-free" builds of Firefox (Windows only): https://ftp.mozilla.org/pub/firefox/releases/latest/win32-EME-free/en-US/
 user_pref("media.gmp-eme-adobe.autoupdate", false);
 user_pref("media.gmp-eme-adobe.enabled", false);
 user_pref("media.eme.apiVisible", false);
@@ -355,7 +354,7 @@ user_pref("browser.eme.ui.enabled", false);
 user_pref("loop.CSP", "");
 user_pref("loop.enabled", false);
 user_pref("loop.feedback.baseUrl", "");
-user_pref("loop.oauth.google.scope", "");
+user_pref("loop.oauth.google.scope", ""); // What's Google doing in there as well?
 user_pref("loop.server", "");
 
 // Disable "Pocket" bloatware:

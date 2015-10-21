@@ -17,7 +17,7 @@ None of the settings in this repository are blindly copied over from other sourc
 
 To apply these tweaks, type `about:config` into the URL bar, and use the config search bar to look up the individual settings found in `user.js`. 
 
-(Or simply put the whole file into your Firefox profile folder, if you're *really* sure you want to add all the preferences at once. You probably don't want to do that, since some of the not security related settings are definitely a personal choice, not a universal constant.)
+Or simply put the whole file into your Firefox profile folder, if you're *really* sure you want to add all the preferences at once. You probably don't want to do that, since some of the settings are definitely a personal choice, not a universal constant. General info about user.js: http://kb.mozillazine.org/User.js_file
 
 ---
 
