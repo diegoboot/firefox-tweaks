@@ -60,6 +60,7 @@ user_pref("media.getusermedia.screensharing.allowed_domains", "");
 user_pref("network.dns.disableIPv6", true);
     // http://knowipv6.digitalelement.com/?p=66
 user_pref("network.http.fast-fallback-to-IPv4", true);
+
 // Disable sending HTML5 pings:
 user_pref("browser.send_pings", false); // http://kb.mozillazine.org/Browser.send_pings
 user_pref("browser.send_pings.require_same_host", true); // http://kb.mozillazine.org/Browser.send_pings.require_same_host
