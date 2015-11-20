@@ -461,12 +461,12 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "");
     // Unfortunately, very few addons are compatible with e10s at the moment: http://arewee10syet.com/
     // https://wiki.mozilla.org/Electrolysis
 
-// Thus, reluctantly disabling e10s for now:
+// So reluctantly disabling e10s for now? This will "fix" addon compatibilty, but break image drag & drop on many sites:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1147156
     // https://bugzilla.mozilla.org/show_bug.cgi?id=960783
-user_pref("browser.tabs.remote.autostart", false);
-user_pref("browser.tabs.remote.autostart.1", false);
-user_pref("browser.tabs.remote.autostart.2", false);
+// user_pref("browser.tabs.remote.autostart", false); // default setting (in FF43/44)
+// user_pref("browser.tabs.remote.autostart.1", false); // default setting (in FF43/44)
+// user_pref("browser.tabs.remote.autostart.2", false); // This breaks image drag & drop on many sites! (in FF43/44)
 
 // Improve the abysmal Javascript/AJAX performance. 
     // I'm not talking about meaningless synthetic benchmark results here. 
