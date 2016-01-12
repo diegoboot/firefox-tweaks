@@ -1,5 +1,5 @@
 // ----------------------------------------------------
-// Tweaks for Firefox 43 Developer Edition
+// Tweaks for Firefox 43
 // (Backward-ish compatible-ish)
 // https://github.com/dfkt/firefox-tweaks
 // ----------------------------------------------------
@@ -226,6 +226,11 @@ user_pref("security.ssl3.rsa_aes_256_sha", true);
 user_pref("security.ssl3.rsa_des_ede3_sha", false);
 user_pref("security.ssl3.rsa_rc4_128_md5", false);
 user_pref("security.ssl3.rsa_rc4_128_sha", false);
+
+// Reject SHA1 certs
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=942515#c32
+    // http://www.scmagazine.com/mozilla-pulls-back-on-rejecting-sha-1-certs-outright/article/463913/
+user_pref("security.pki.sha1_enforcement_level", 1);
 
 // ----------------------------------------------------
 // APPEARANCE / UI / UX
@@ -460,8 +465,9 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "");
 // Improve the abysmal performance of Firefox - without using e10s. 
     // Unfortunately, very few addons are compatible with e10s at the moment: http://arewee10syet.com/
     // https://wiki.mozilla.org/Electrolysis
+    // Not working for me: CM Send Link, Disconnect (?), 
 
-// So reluctantly disabling e10s for now? This will "fix" addon compatibilty, but break image drag & drop on many sites:
+// So, reluctantly disabling e10s for now? This will "fix" addon compatibilty, but break image drag & drop on many sites:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1147156
     // https://bugzilla.mozilla.org/show_bug.cgi?id=960783
 // user_pref("browser.tabs.remote.autostart", false); // default setting (in FF43/44)
