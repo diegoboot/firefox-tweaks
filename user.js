@@ -1,5 +1,5 @@
 // ----------------------------------------------------
-// Tweaks for Firefox 43
+// Tweaks for Firefox 45
 // (Backward-ish compatible-ish)
 // https://github.com/dfkt/firefox-tweaks
 // ----------------------------------------------------
@@ -168,8 +168,9 @@ user_pref("browser.safebrowsing.reportPhishURL", "");
 // Disable WebGL:
     // http://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
     // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
-user_pref("webgl.disabled", true);
-user_pref("webgl.disable-extensions", true);
+    // However, this breaks some sites, such as Tweetdeck
+// user_pref("webgl.disabled", true);
+// user_pref("webgl.disable-extensions", true);
 
 // Disable HTML5 video stats:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=654550
