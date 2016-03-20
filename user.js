@@ -443,6 +443,10 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "");
 // NEEDS MORE RESEARCH
 // ----------------------------------------------------
 
+// FF45 disables .onion DNS lookup (for good reason). Probably shouldn't be re-enabled:
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1228457
+// user_pref("network.dns.blockDotOnion", true);
+
 // Web push:
     // https://en.wikipedia.org/wiki/Push_technology
     // https://unicorn-wg.github.io/webpush-protocol/
