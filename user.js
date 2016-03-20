@@ -168,7 +168,7 @@ user_pref("browser.safebrowsing.reportPhishURL", "");
 // Disable WebGL:
     // http://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
     // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
-    // However, this breaks some sites, such as Tweetdeck
+    // However, this appears to breaks some sites, such as Tweetdeck/Twitter
 // user_pref("webgl.disabled", true);
 // user_pref("webgl.disable-extensions", true);
 
