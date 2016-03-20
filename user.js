@@ -443,10 +443,6 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "");
 // NEEDS MORE RESEARCH
 // ----------------------------------------------------
 
-// FF45 disables .onion DNS lookup (for good reason). Probably shouldn't be re-enabled:
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=1228457
-// user_pref("network.dns.blockDotOnion", true);
-
 // Web push:
     // https://en.wikipedia.org/wiki/Push_technology
     // https://unicorn-wg.github.io/webpush-protocol/
@@ -467,12 +463,12 @@ user_pref("browser.aboutHomeSnippets.updateUrl", "");
 // user_pref("network.http.spdy.enabled.http2", false);
 // user_pref("network.http.spdy.enabled.v3-1", false);
 
-// FF43: Improve the abysmal performance of Firefox - without using e10s. 
+// Improve the abysmal performance of Firefox - without using e10s. 
     // Unfortunately, very few addons are compatible with e10s at the moment: http://arewee10syet.com/
     // https://wiki.mozilla.org/Electrolysis
     // Not working for me: CM Send Link, Disconnect (?), 
 
-// FF43: So, reluctantly disabling e10s for now? This will "fix" addon compatibilty, but break image drag & drop on many sites:
+// So, reluctantly disabling e10s for now? This will "fix" addon compatibilty, but break image drag & drop on many sites:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1147156
     // https://bugzilla.mozilla.org/show_bug.cgi?id=960783
 // user_pref("browser.tabs.remote.autostart", false); // default setting (in FF43/44)
