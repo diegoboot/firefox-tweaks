@@ -31,7 +31,8 @@ user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.redirection-limit", 20);
 
-// Inserira novas linhas. Para isso, clique com o botão direito > Nova Opção > Número Inteiro .
+// Inserira novas linhas
+// Botão direito > Nova Opção > Número Inteiro
 user_pref("nglayout.initialpaint.delay", 0);
 user_pref("content.notify.backoffcount", 5);
 user_pref("ui.submenuDelay", 0);
