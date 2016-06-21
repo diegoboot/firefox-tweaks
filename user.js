@@ -31,6 +31,14 @@ user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.redirection-limit", 20);
 
+// Inserira novas linhas. Para isso, clique com o botão direito > Nova Opção > Número Inteiro .
+nglayout.initialpaint.delay e no campo valor insira ‘0’ (zero);
+content.notify.backoffcount com valor ‘5’;
+ui.submenuDelay e valor ‘0’ (zero);
+browser.cache.memory.capacity de valor //‘16384’ para o Firefox consumir 16 MB de memória. Ou ‘32768’ para 32 MB.
+//Busque no localizar a linha 
+user_pref ("layout.spellcheckDefault", 2);
+
 // Enable new cache:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=913807
 user_pref("browser.cache.use_new_backend", 1);
