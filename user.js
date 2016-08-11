@@ -11,10 +11,11 @@
 // https://github.com/pyllyukko/user.js (Contains possibly deprecated preference settings)
 
 // ----------------------------------------------------
-// SPEED / PERFORMANCE
+// VELOCIDADE / PERFORMANCE | SPEED / PERFORMANCE
 // ----------------------------------------------------
 
-// Default network values from Tor Browser 4.5.3:
+// Valores da chaves de rede padrão do baseados no navegador Tor 4.5.3
+// Default network values from Tor Browser 4.5.3
 user_pref("network.http.max-connections", 256);
 user_pref("network.http.max-persistent-connections-per-proxy", 256);
 user_pref("network.http.max-persistent-connections-per-server", 6);
@@ -37,6 +38,7 @@ user_pref("nglayout.initialpaint.delay", 0);
 user_pref("content.notify.backoffcount", 5);
 user_pref("ui.submenuDelay", 0);
 user_pref("browser.cache.memory.capacity", 32768); //‘16384’ para o Firefox consumir 16 MB de memória. Ou ‘32768’ para 32 MB.
+
 //Busque no localizar a linha 
 user_pref ("layout.spellcheckDefault", 2);
 
@@ -45,10 +47,11 @@ user_pref ("layout.spellcheckDefault", 2);
 user_pref("browser.cache.use_new_backend", 1);
 
 // ----------------------------------------------------
-// SECURITY / PRIVACY
+// SEGURANÇA E PRIVACIDADE | SECURITY / PRIVACY
 // ----------------------------------------------------
 
-// Disable WebRTC:
+// Desativar WebRTC | Disable WebRTC:
+    // O intuito de desativar as chaves WebRTC é impedir o vazamento dos seus verdadeiros endereços IP internos e externos.
     // This is extremely important for VPN users - WebRTC *will* leak your real internal and external IP addresses.
     // WebRTC leak test (among other things): https://ipleak.net/
     // https://hacks.mozilla.org/2012/11/progress-update-on-webrtc-for-firefox-on-desktop/
@@ -60,8 +63,8 @@ user_pref("media.navigator.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("media.getusermedia.screensharing.allowed_domains", "");
 
-// Disable IPv6:
-    // Some texts on why IPv6 is no good for privacy: 
+// Desativar IPV6 | Disable IPv6:
+    // Veja alguns textos sobre o porquê de IPv6 não é bom para a privacidade | Some texts on why IPv6 is no good for privacy: 
     // https://www.defcon.org/images/defcon-15/dc15-presentations/Lindqvist/Whitepaper/dc-15-lindqvist-WP.pdf
     // https://iapp.org/news/a/2011-09-09-facing-the-privacy-implications-of-ipv6
     // https://www.christopher-parsons.com/ipv6-and-the-future-of-privacy/
@@ -70,58 +73,58 @@ user_pref("network.dns.disableIPv6", true);
     // http://knowipv6.digitalelement.com/?p=66
 user_pref("network.http.fast-fallback-to-IPv4", true);
 
-// Disable sending HTML5 pings:
+// Desativar envio de pings HTML5 | Disable sending HTML5 pings:
 user_pref("browser.send_pings", false); // http://kb.mozillazine.org/Browser.send_pings
 user_pref("browser.send_pings.require_same_host", true); // http://kb.mozillazine.org/Browser.send_pings.require_same_host
 
-// Disable DNS proxy bypass:
+// Desativar desvio de proxy DNS | Disable DNS proxy bypass:
     // https://superuser.com/questions/103593/how-to-do-dns-through-a-proxy-in-firefox
     // https://bugzilla.mozilla.org/show_bug.cgi?id=134105
 user_pref("network.proxy.socks_remote_dns", true); // http://kb.mozillazine.org/Network.proxy.socks_remote_dns
 
-// Disable DNS prefetching:
+// Desativar pré-busca de DNS | Disable DNS prefetching:
     // http://www.ghacks.net/2013/04/27/firefox-prefetching-what-you-need-to-know/
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
-// Disable link prefetching:
+// Desativar pré-busca de Link | Disable link prefetching:
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
 
-// Don't connect to remote links on hover:
+// Não ser direcionado para links remotos em foco | Don't connect to remote links on hover:
     // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
     // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
 user_pref("network.http.speculative-parallel-limit", 0);
 
-// Enable tracking protection:
+// Habilitar proteção de rastreamento | Enable tracking protection:
     // Shady advertisers won't honor these settings, so make sure you use Privacy Badger, Disconnect, or similar addons.
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.donottrackheader.value", 1);
 user_pref("privacy.trackingprotection.enabled", true);
 
-// Show Punycode for international domain names, prevent some phishing attempts:
+// Punycode | Show Punycode for international domain names, prevent some phishing attempts:
     // http://kb.mozillazine.org/Network.IDN_show_punycode
 user_pref("network.IDN_show_punycode", true);
 
-// Prevent sites from sniffing clipboard content:
+// Impedir que sites vasculhem por conteúdo da área de transferência | Prevent sites from sniffing clipboard content:
     // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
 user_pref("dom.event.clipboardevents.enabled", false);
 
-// Disable geolocation:
+// Desativar Geolocalização | Disable geolocation:
     // Don't do this on mobile browsers if you want Google Maps or similar to know your location.
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "");
 
-// Disable geotargeting:
+// Desativar Segmentação Geográfica | Disable geotargeting:
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("browser.search.geoip.url", "");
 
-// Disable crash reporting:
+// Desativar Relatórios de Falhas | Disable crash reporting:
 user_pref("breakpad.reportURL", ""); // http://kb.mozillazine.org/Breakpad.reportURL
 
-// Disable telemetry:
+// Desativar Telemetria | Disable telemetry:
     // https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
@@ -130,7 +133,7 @@ user_pref("toolkit.telemetry.previousBuildID", "");
 user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.unified", false); // This turns off telemetry completely, in combination with the above
 
-// Disable health report:
+// Desativar Relatório de Saúde | Disable health report:
     // https://gecko.readthedocs.org/en/latest/services/healthreport/healthreport/index.html#legal-and-privacy-concerns
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
@@ -142,11 +145,11 @@ user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled.v2", false);
 
-// Disable "Heartbeat":
+// Desativar Heartbeat | Disable "Heartbeat":
     // https://wiki.mozilla.org/Advocacy/heartbeat
 user_pref("browser.selfsupport.url", "");
 
-// Disable "safe browsing" (aka. Google tracking/logging/phone-home):
+// Desativar "Navegação segura" (Rastreamento Google / Log / Celular) | Disable "safe browsing" (aka. Google tracking/logging/phone-home):
     // Deprecated preferences:
 // user_pref("browser.safebrowsing.appRepURL", "");
 // user_pref("browser.safebrowsing.gethashURL", "");
@@ -158,7 +161,7 @@ user_pref("browser.selfsupport.url", "");
 // user_pref("browser.safebrowsing.reportURL", "");
 // user_pref("browser.safebrowsing.updateURL", "");
 // user_pref("urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey", "");
-    // Preferences since FF43:
+    // Preferência desde Firefox v43 | Preferences since FF43:
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
@@ -174,24 +177,25 @@ user_pref("browser.safebrowsing.reportMalwareMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 
-// Disable WebGL:
+// Desativar WebGL | Disable WebGL:
     // http://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
     // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
     // However, this appears to breaks some sites, such as Tweetdeck/Twitter
+    // Notei que no caso do Firefox Niglity o recurso parece não funcionar perfeitamente em alguns sites como o Tweetdeck/Twitter.
 // user_pref("webgl.disabled", true);
 // user_pref("webgl.disable-extensions", true);
 
-// Disable HTML5 video stats:
+// Desativar estatísticas de Vídeo HTML5 | Disable HTML5 video stats:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=654550
 user_pref("media.video_stats.enabled", false);
 
-// Disable support for asm.js (http://asmjs.org/):
+// Desativar suporte para asm.js | Disable support for asm.js (http://asmjs.org/):
     // https://www.mozilla.org/en-US/security/advisories/mfsa2015-29/
     // https://www.mozilla.org/en-US/security/advisories/mfsa2015-50/
     // https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2712
 user_pref("javascript.options.asmjs", false);
 
-// Disable rendering of SVG OpenType fonts:
+// Desativar renderização de fontes OpenType SVG | Disable rendering of SVG OpenType fonts:
     // https://wiki.mozilla.org/SVGOpenTypeFonts
     // https://github.com/iSECPartners/publications/blob/master/presentations/SVG_Security-rdegraaf-bh_us_2014.pdf
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
