@@ -1,27 +1,35 @@
-# firefox-tweaks
-An attempt to make Firefox suck less.
+# Firefox Tweaks
+O Projeto tem como como objetivo dar dicas — para usuários avançados ou não — de como deixar o navegador para mais veloz com a melhor performance possível, além de ensinar como manter a privacidade e segurança de quem utiliza o browser.
 
 ---
 
-Unlike other resources out there, this repo isn't only about privacy/security, but covers issues like browser speed, UI/UX annoyances, and disabling/removing unnecessary bloatware as well.
+Ao contrário de outros recursos de terceiros, este repositório não é apenas sobre a privacidade/segurança, mas abrange questões como a velocidade do navegador, aborrecimentos com UI/UX e também a desativação/remoção de bloatwares desnecessários.
 
-Some - in my opinion - overly restrictive or annoying "best security practices" have been omitted on purpose: I don't want my main browser to feel like it's in "Private Window" mode all the time. For that approach, Tor Browser would be a better choice than standard Firefox anyways. I want my main browser to remember its history, passwords, form fields, and so on. YMMV.
+Na minha opinião algumas "práticas de melhor segurança" demasiadas como restritivas ou irritantes foram omitidos de propósito: eu não quero que ao usar o meu navegador principal e sentir como ele está em modo "Janela Privado" o tempo todo. Desse modo, entende-se que o Navegador Tor seria uma escolha muito melhor do que Firefox padrão. Eu quero o meu navegador padrão possa salvar seu história, senhas, campos de formulário, e assim por diante.
 
-This repo is meant as an additional resource to improve aspects of Firefox, after you've done all the standard steps to ensure a base level of security. Have some basic security/privacy addons installed (uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc.), run a decent firewall, maybe connect over a VPN, maybe have a decent hosts file, and so on. And, most important of all: *use your brain*, don't just click on random stuff. 
+Esse repositório deve ser considerado como um recurso adicional para melhorar certos aspectos do Firefox, para que depois de ter feito todos os passos sugeridos ele possa garantir um nível básico de segurança. É possível tambpem ter alguma segurança/privacidade básica instalando addons [uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc.], executando um firewall ou se conectar através de uma VPN, ou ainda ter um arquivo de hosts decente. E, o mais importante de tudo: *use seu cérebro*, não basta clicar em coisas aleatórias.
 
-Once you've done that, you probably don't need stuff like "safe browsing" and similar, which gives a somewhat false sense of security (and constantly sends data about your browsing habits to Google).
-
----
-
-None of the settings in this repository are blindly copied over from other sources. Each setting has been tested by me, and deprecated settings are removed whenever necessary. I'm trying to keep the cruft level as low as possible, only supporting settings that actually work in current Firefox versions.
+Uma vez feito isso, você provavelmente não vai precisas de coisas como "Navegação segura" e recursos similares, o que dá um pouco de falsa sensação de segurança já que constantemente o browser envia dados sobre seus hábitos de navegação para o Google.
 
 ---
 
-**Do not change any of these settings without understanding what they're doing. This repo isn't meant for inexperienced users.** 
+Nenhuma das definições neste repositório foram copiadas cegamente de outras fontes. Cada configuração foi testado por mim, e as configurações obsoletos foram ou serão removidas sempre que necessário — conto com vocês para feedbacks. Eu estou tentando manter o nível cruft tão baixo quanto possível, somente as configurações que realmente funcionam nas versões atuais do Firefox.
 
-To apply these tweaks, type `about:config` into the URL bar, and use the config search bar to look up the individual settings found in `user.js`. 
+---
 
-Or simply put the whole file into your Firefox profile folder, if you're *really* sure you want to add all the preferences at once. You probably don't want to do that, since some of the settings are definitely a personal choice, not a universal constant. General info about user.js: http://kb.mozillazine.org/User.js_file
+**Ressalto para que não altere qualquer uma dessas configurações sem entender o que eles podem fazer. Este repositório apesar de não ser focar em usuários inexperientes cada preferência conta com um link para informação das chaves, então leia antes de fazer qualquer alteração**.
+
+Para aplicar esses ajustes, digite 'about:config' na barra de URL — endereços se preferir —, e usar a barra de pesquisa da configuração para procurar as definições individuais encontrados no 'pref.js'.
+
+Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso se você realmente tive certeza de que deseja adicionar todas as preferências de uma só vez. Você provavelmente não vai querer fazer isso — como eu —, uma vez que algumas das configurações são definitivamente uma escolha pessoal e não uma constante universal.
+
+**Saiba mais sobre o user.js em** http://kb.mozillazine.org/User.js_file
+
+---
+
+No canal Taverna Linux [https://youtube.com/c/TavernaLinuxBR] criei a série Firefox Naurú com foco nesse projeto/repositório, logo abaixo vc pode encontrar a playlist.
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLqiGlrqUyC1y3Fog9JGzgHrYRNZkgjaTD" frameborder="0" allowfullscreen></iframe>
 
 ---
 
