@@ -13,13 +13,13 @@ Uma vez feito isso, você provavelmente não vai precisas de coisas como "Navega
 
 ---
 
-Nenhuma das definições neste repositório foram copiadas cegamente de outras fontes. Cada configuração foi testado por mim, e as configurações obsoletos foram ou serão removidas sempre que necessário — conto com vocês para feedbacks. Eu estou tentando manter o nível cruft tão baixo quanto possível, somente as configurações que realmente funcionam nas versões atuais do Firefox.
+Nenhuma das definições neste repositório foram copiadas cegamente de outras fontes. Cada configuração foi testado por mim, e as configurações obsoletos foram ou serão removidas sempre que necessário — *conto com vocês para feedbacks*. Eu estou tentando manter o nível cruft tão baixo quanto possível, somente as configurações que realmente funcionam nas versões atuais do Firefox.
 
 ---
 
 **Ressalto para que não altere qualquer uma dessas configurações sem entender o que eles podem fazer. Este repositório apesar de não ser focar em usuários inexperientes cada preferência conta com um link para informação das chaves, então leia antes de fazer qualquer alteração**.
 
-Para aplicar esses ajustes, digite 'about:config' na barra de URL — endereços se preferir —, e usar a barra de pesquisa da configuração para procurar as definições individuais encontrados no 'pref.js'.
+Para aplicar esses ajustes, digite `about:config` na barra de URL — *endereços se preferir* —, e usar a barra de pesquisa da configuração para procurar as definições individuais encontrados no `pref.js`.
 
 Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso se você realmente tive certeza de que deseja adicionar todas as preferências de uma só vez. Você provavelmente não vai querer fazer isso — como eu —, uma vez que algumas das configurações são definitivamente uma escolha pessoal e não uma constante universal.
 
@@ -27,7 +27,7 @@ Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso
 
 ---
 
-No canal [Taverna Linux](https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1) criei a série Firefox Naurú com foco nesse projeto/repositório, logo abaixo você pode encontrar o link para a playlist.
+No canal [Taverna Linux](https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1) criei a **série Firefox Naurú** com foco nesse projeto/repositório, logo abaixo você pode encontrar o link para a playlist.
 
 <a href="https://www.youtube.com/watch?v=nz93dNcp8BQ&amp;list=PLqiGlrqUyC1y3Fog9JGzgHrYRNZkgjaTD" target="_blank"><img src="https://i.ytimg.com/vi/nz93dNcp8BQ/maxresdefault.jpg" 
 alt="Série Firefox Naurú" width="853" height="480" border="10" /></a>
