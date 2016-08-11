@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Firefox-tweaks by diegoboot</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Firefox-tweaks</h1>
+        <p class="header">Melhorando a experiência do Firefox para o usuário</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/diegoboot/firefox-tweaks/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/diegoboot/firefox-tweaks/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/diegoboot/firefox-tweaks">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/diegoboot">diegoboot</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="firefox-tweaks" class="anchor" href="#firefox-tweaks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Firefox Tweaks</h1>
+
+<p>O Projeto tem como como objetivo dar dicas — <em>para usuários avançados ou não</em> — de como deixar o navegador para mais veloz com a melhor performance possível, além de ensinar como manter a privacidade e segurança de quem utiliza o browser.</p>
+
+<hr>
+
+<p>Ao contrário de outros recursos de terceiros, este repositório não é apenas sobre a privacidade/segurança, mas abrange questões como a velocidade do navegador, aborrecimentos com UI/UX e também a desativação/remoção de bloatwares desnecessários.</p>
+
+<p>Na minha opinião algumas "<em>práticas de melhor segurança</em>" demasiadas como restritivas ou irritantes foram omitidos de propósito: eu não quero que ao usar o meu navegador principal e sentir como ele está em modo "Privado" o tempo todo. Desse modo, entende-se que o <strong>Navegador Tor</strong> seria uma escolha muito melhor do que Firefox padrão. Eu quero o meu navegador padrão possa salvar seu história, senhas, campos de formulário, e assim por diante.</p>
+
+<p>Esse repositório deve ser considerado como um recurso adicional para melhorar certos aspectos do Firefox, para que depois de ter feito todos os passos sugeridos ele possa garantir um nível básico de segurança. É possível tambpem ter alguma segurança/privacidade básica instalando addons [<em>uBlock Origin, Privacy Badger, HTTPS Everywhere, NoScript, Disconnect, Self-Destructing Cookies, etc</em>.], executando um firewall ou se conectar através de uma VPN, ou ainda ter um arquivo de hosts decente. E, o mais importante de tudo: <em>use seu cérebro</em>, não basta clicar em coisas aleatórias.</p>
+
+<p>Uma vez feito isso, você provavelmente não vai precisas de coisas como "Navegação segura" e recursos similares, o que dá um pouco de falsa sensação de segurança já que constantemente o browser envia dados sobre seus hábitos de navegação para o Google.</p>
+
+<hr>
+
+<p>Nenhuma das definições neste repositório foram copiadas cegamente de outras fontes. Cada configuração foi testado por mim, e as configurações obsoletos foram ou serão removidas sempre que necessário — <em>conto com vocês para feedbacks</em>. Eu estou tentando manter o nível cruft tão baixo quanto possível, somente as configurações que realmente funcionam nas versões atuais do Firefox.</p>
+
+<hr>
+
+<p><strong>Ressalto para que não altere qualquer uma dessas configurações sem entender o que eles podem fazer. Este repositório apesar de não ser focar em usuários inexperientes cada preferência conta com um link para informação das chaves, então leia antes de fazer qualquer alteração</strong>.</p>
+
+<p>Para aplicar esses ajustes, digite <code>about:config</code> na barra de URL — <em>endereços se preferir</em> —, e usar a barra de pesquisa da configuração para procurar as definições individuais encontrados no <code>pref.js</code>.</p>
+
+<p>Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso se você realmente tive certeza de que deseja adicionar todas as preferências de uma só vez. Você provavelmente não vai querer fazer isso — <em>como eu</em> —, uma vez que algumas das configurações são definitivamente uma escolha pessoal e não uma constante universal.</p>
+
+<p><strong>Saiba mais sobre o <code>user.js</code> em</strong> <a href="http://kb.mozillazine.org/User.js_file">http://kb.mozillazine.org/User.js_file</a></p>
+
+<hr>
+
+<p>No canal <a href="https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1">Taverna Linux</a> criei a <strong>série Firefox Naurú</strong> com foco nesse projeto/repositório, logo você encontra os links com documentações por tópicos.</p>
+
+<ul>
+<li>
+<g-emoji alias="rocket" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji> <a href="https://medium.com/@tavernalinux/firefox-velocidade-e-performance-naur%C3%BA-pete%C4%A9-7003e9df3066">Firefox - Velocidade e Performance ፤ Naurú Peteĩ</a>
+</li>
+<li>
+<g-emoji alias="closed_lock_with_key" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f510.png">🔐</g-emoji> <a href="https://medium.com/@tavernalinux/firefox-seguran%C3%A7a-e-privacidade-naur%C3%BA-moko%C4%A9-193eb7f48e">Firefox - Segurança e Privacidade ፤ Naurú Mokoĩ</a>
+</li>
+<li>
+<g-emoji alias="lock_with_ink_pen" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f50f.png">🔏</g-emoji> <a href="https://medium.com/@tavernalinux/firefox-certificados-e-criptografia-naur%C3%BA-mboapy-d53d03b6eb85">Firefox - Certificados e Criptografia ፤ Naurú Mboapy</a>
+</li>
+<li>
+<g-emoji alias="wrench" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f527.png">🔧</g-emoji> <a href="https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b">Firefox - Aspectos UX/UI e Ferramentas de Desenvolvedor ፤ Naurú Irundy</a>
+</li>
+</ul>
+
+<hr>
+
+<p>Some useful discussion (and some rather silly nonsense said) about this repo: <a href="https://news.ycombinator.com/item?id=10067797">https://news.ycombinator.com/item?id=10067797</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
