@@ -27,10 +27,12 @@ Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso
 
 ---
 
-No canal [Taverna Linux](https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1) criei a **série Firefox Naurú** com foco nesse projeto/repositório, logo abaixo você pode encontrar o link para a playlist.
+No canal [Taverna Linux](https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1) criei a **série Firefox Naurú** com foco nesse projeto/repositório, logo você encontra os links com documentações por tópicos.
 
-<a href="https://www.youtube.com/watch?v=nz93dNcp8BQ&amp;list=PLqiGlrqUyC1y3Fog9JGzgHrYRNZkgjaTD" target="_blank"><img src="https://i.ytimg.com/vi/nz93dNcp8BQ/maxresdefault.jpg" 
-alt="Série Firefox Naurú" width="853" height="480" border="10" /></a>
+* 🚀 [Firefox - Velocidade e Performance ፤ Naurú Peteĩ](https://medium.com/@tavernalinux/firefox-velocidade-e-performance-naur%C3%BA-pete%C4%A9-7003e9df3066)
+* 🔐 [Firefox - Segurança e Privacidade ፤ Naurú Mokoĩ](https://medium.com/@tavernalinux/firefox-seguran%C3%A7a-e-privacidade-naur%C3%BA-moko%C4%A9-193eb7f48e)
+* 🔏 [Firefox - Certificados e Criptografia ፤ Naurú Mboapy](https://medium.com/@tavernalinux/firefox-certificados-e-criptografia-naur%C3%BA-mboapy-d53d03b6eb85)
+* 🔧 [Firefox - Aspectos UX/UI e Ferramentas de Desenvolvedor ፤ Naurú Irundy](https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b)
 
 ---
 
