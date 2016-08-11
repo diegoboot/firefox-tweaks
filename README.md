@@ -27,9 +27,10 @@ Ou simplesmente adicionar todo o arquivo para a pasta de perfil do Firefox, isso
 
 ---
 
-No canal Taverna Linux [https://youtube.com/c/TavernaLinuxBR] criei a série Firefox Naurú com foco nesse projeto/repositório, logo abaixo vc pode encontrar a playlist.
+No canal [Taverna Linux](https://www.youtube.com/c/TavernaLinuxBR?sub_confirmation=1) criei a série Firefox Naurú com foco nesse projeto/repositório, logo abaixo você pode encontrar o link para a playlist.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLqiGlrqUyC1y3Fog9JGzgHrYRNZkgjaTD" frameborder="0" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=nz93dNcp8BQ&amp;list=PLqiGlrqUyC1y3Fog9JGzgHrYRNZkgjaTD" target="_blank"><img src="https://i.ytimg.com/vi/nz93dNcp8BQ/maxresdefault.jpg" 
+alt="Série Firefox Naurú" width="853" height="480" border="10" /></a>
 
 ---
 
