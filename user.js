@@ -1,21 +1,20 @@
 // ----------------------------------------------------
-// Tweaks for Firefox 45
+// Tweaks padrão para Firefox 45+ • Tweaks for Firefox 45
 // (Backward-ish compatible-ish)
-// https://github.com/dfkt/firefox-tweaks
+// https://diegoboot.github.io/firefox-tweaks
 // ----------------------------------------------------
 
-// Further reading:
+// Leia Também • Further reading
 // http://www.ghacks.net/2015/08/18/a-comprehensive-list-of-firefox-privacy-and-security-settings/
 // http://thesimplecomputer.info/tscs-firefox-tweak-guide
 // http://blog.joshnotes.com/customize-firefox-about-config/
 // https://github.com/pyllyukko/user.js (Contains possibly deprecated preference settings)
 
 // ----------------------------------------------------
-// VELOCIDADE / PERFORMANCE | SPEED / PERFORMANCE
+// VELOCIDADE / PERFORMANCE • SPEED / PERFORMANCE
 // ----------------------------------------------------
 
-// Valores da chaves de rede padrão do baseados no navegador Tor 4.5.3
-// Default network values from Tor Browser 4.5.3
+// Valores da chaves de rede padrão do baseados no navegador Tor 4.5.3 • Default network values from Tor Browser 4.5.3
 user_pref("network.http.max-connections", 256);
 user_pref("network.http.max-persistent-connections-per-proxy", 256);
 user_pref("network.http.max-persistent-connections-per-server", 6);
@@ -42,15 +41,17 @@ user_pref("browser.cache.memory.capacity", 32768); //‘16384’ para o Firefox 
 //Busque no localizar a linha 
 user_pref ("layout.spellcheckDefault", 2);
 
-// Enable new cache:
+// Habilitar novo cache • Enable new cache
     // https://bugzilla.mozilla.org/show_bug.cgi?id=913807
 user_pref("browser.cache.use_new_backend", 1);
 
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-velocidade-e-performance-naur%C3%BA-pete%C4%A9-7003e9df3066
+
 // ----------------------------------------------------
-// SEGURANÇA E PRIVACIDADE | SECURITY / PRIVACY
+// SEGURANÇA / PRIVACIDADE • SECURITY / PRIVACY
 // ----------------------------------------------------
 
-// Desativar WebRTC | Disable WebRTC:
+// Desativar WebRTC • Disable WebRTC:
     // O intuito de desativar as chaves WebRTC é impedir o vazamento dos seus verdadeiros endereços IP internos e externos.
     // This is extremely important for VPN users - WebRTC *will* leak your real internal and external IP addresses.
     // WebRTC leak test (among other things): https://ipleak.net/
@@ -63,7 +64,7 @@ user_pref("media.navigator.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("media.getusermedia.screensharing.allowed_domains", "");
 
-// Desativar IPV6 | Disable IPv6:
+// Desativar IPV6 • Disable IPv6:
     // Veja alguns textos sobre o porquê de IPv6 não é bom para a privacidade | Some texts on why IPv6 is no good for privacy: 
     // https://www.defcon.org/images/defcon-15/dc15-presentations/Lindqvist/Whitepaper/dc-15-lindqvist-WP.pdf
     // https://iapp.org/news/a/2011-09-09-facing-the-privacy-implications-of-ipv6
@@ -73,67 +74,69 @@ user_pref("network.dns.disableIPv6", true);
     // http://knowipv6.digitalelement.com/?p=66
 user_pref("network.http.fast-fallback-to-IPv4", true);
 
-// Desativar envio de pings HTML5 | Disable sending HTML5 pings:
+// Desativar envio de pings HTML5 • Disable sending HTML5 pings:
 user_pref("browser.send_pings", false); // http://kb.mozillazine.org/Browser.send_pings
 user_pref("browser.send_pings.require_same_host", true); // http://kb.mozillazine.org/Browser.send_pings.require_same_host
 
-// Desativar desvio de proxy DNS | Disable DNS proxy bypass:
+// Desativar desvio de proxy DNS • Disable DNS proxy bypass:
     // https://superuser.com/questions/103593/how-to-do-dns-through-a-proxy-in-firefox
     // https://bugzilla.mozilla.org/show_bug.cgi?id=134105
+    // http://kb.mozillazine.org/Browser.send_pings.require_same_host
 user_pref("network.proxy.socks_remote_dns", true); // http://kb.mozillazine.org/Network.proxy.socks_remote_dns
 
-// Desativar pré-busca de DNS | Disable DNS prefetching:
+// Desativar pré-busca de DNS • Disable DNS prefetching:
     // http://www.ghacks.net/2013/04/27/firefox-prefetching-what-you-need-to-know/
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
-// Desativar pré-busca de Link | Disable link prefetching:
+// Desativar pré-busca de Link • Disable link prefetching:
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ
 user_pref("network.prefetch-next", false);
 
-// Não ser direcionado para links remotos em foco | Don't connect to remote links on hover:
+// Não ser direcionado para links remotos em foco • Don't connect to remote links on hover:
     // http://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
     // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections 
 user_pref("network.http.speculative-parallel-limit", 0);
 
-// Habilitar proteção de rastreamento | Enable tracking protection:
+// Habilitar proteção de rastreamento • Enable tracking protection:
     // Shady advertisers won't honor these settings, so make sure you use Privacy Badger, Disconnect, or similar addons.
+    // https://www.bestvpn.com/blog/8499/make-firefox-secure-using-aboutconfig/
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.donottrackheader.value", 1);
 user_pref("privacy.trackingprotection.enabled", true);
 
-// Punycode | Show Punycode for international domain names, prevent some phishing attempts:
+// Punycode • Show Punycode for international domain names, prevent some phishing attempts:
     // http://kb.mozillazine.org/Network.IDN_show_punycode
 user_pref("network.IDN_show_punycode", true);
 
-// Impedir que sites vasculhem por conteúdo da área de transferência | Prevent sites from sniffing clipboard content:
+// Impedir que sites vasculhem por conteúdo da área de transferência • Prevent sites from sniffing clipboard content:
     // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
 user_pref("dom.event.clipboardevents.enabled", false);
 
-// Desativar Geolocalização | Disable geolocation:
+// Desativar Geolocalização • Disable geolocation:
     // Don't do this on mobile browsers if you want Google Maps or similar to know your location.
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "");
 
-// Desativar Segmentação Geográfica | Disable geotargeting:
+// Desativar Segmentação Geográfica • Disable geotargeting:
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("browser.search.geoip.url", "");
 
-// Desativar Relatórios de Falhas | Disable crash reporting:
+// Desativar Relatórios de Falhas • Disable crash reporting:
 user_pref("breakpad.reportURL", ""); // http://kb.mozillazine.org/Breakpad.reportURL
 
-// Desativar Telemetria | Disable telemetry:
+// Desativar Telemetria • Disable telemetry:
     // https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.cachedClientID", "");
-user_pref("toolkit.telemetry.enabled", false); // This alone does *not* disable telemetry
+user_pref("toolkit.telemetry.enabled", false); // Essa chave "não" desativada a telemetria completamente • This alone does *not* disable telemetry
 user_pref("toolkit.telemetry.previousBuildID", "");
 user_pref("toolkit.telemetry.server", "");
-user_pref("toolkit.telemetry.unified", false); // This turns off telemetry completely, in combination with the above
+user_pref("toolkit.telemetry.unified", false); // Combinada com a terceira chave, a telemetria é completamente desativada • This turns off telemetry completely, in combination with the above
 
-// Desativar Relatório de Saúde | Disable health report:
+// Desativar Relatório de Saúde • Disable health report:
     // https://gecko.readthedocs.org/en/latest/services/healthreport/healthreport/index.html#legal-and-privacy-concerns
 user_pref("datareporting.healthreport.about.reportUrl", "");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "");
@@ -145,12 +148,12 @@ user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled.v2", false);
 
-// Desativar Heartbeat | Disable "Heartbeat":
+// Desativar Heartbeat • Disable "Heartbeat":
     // https://wiki.mozilla.org/Advocacy/heartbeat
 user_pref("browser.selfsupport.url", "");
 
-// Desativar "Navegação segura" (Rastreamento Google / Log / Celular) | Disable "safe browsing" (aka. Google tracking/logging/phone-home):
-    // Deprecated preferences:
+// Desativar "Navegação segura" (Rastreamento Google / Log / Celular) • Disable "safe browsing" (aka. Google tracking/logging/phone-home):
+    // Preferências obsoletas • Deprecated preferences:
 // user_pref("browser.safebrowsing.appRepURL", "");
 // user_pref("browser.safebrowsing.gethashURL", "");
 // user_pref("browser.safebrowsing.malware.reportURL", "");
@@ -161,7 +164,7 @@ user_pref("browser.selfsupport.url", "");
 // user_pref("browser.safebrowsing.reportURL", "");
 // user_pref("browser.safebrowsing.updateURL", "");
 // user_pref("urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey", "");
-    // Preferência desde Firefox v43 | Preferences since FF43:
+    // Preferência desde Firefox v43 • Preferences since FF43:
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
@@ -177,7 +180,7 @@ user_pref("browser.safebrowsing.reportMalwareMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishMistakeURL", "");
 user_pref("browser.safebrowsing.reportPhishURL", "");
 
-// Desativar WebGL | Disable WebGL:
+// Desativar WebGL • Disable WebGL:
     // http://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
     // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
     // However, this appears to breaks some sites, such as Tweetdeck/Twitter
@@ -185,44 +188,46 @@ user_pref("browser.safebrowsing.reportPhishURL", "");
 // user_pref("webgl.disabled", true);
 // user_pref("webgl.disable-extensions", true);
 
-// Desativar estatísticas de Vídeo HTML5 | Disable HTML5 video stats:
+// Desativar estatísticas de Vídeo HTML5 • Disable HTML5 video stats:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=654550
 user_pref("media.video_stats.enabled", false);
 
-// Desativar suporte para asm.js | Disable support for asm.js (http://asmjs.org/):
+// Desativar suporte para asm.js • Disable support for asm.js (http://asmjs.org/):
     // https://www.mozilla.org/en-US/security/advisories/mfsa2015-29/
     // https://www.mozilla.org/en-US/security/advisories/mfsa2015-50/
     // https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2712
 user_pref("javascript.options.asmjs", false);
 
-// Desativar renderização de fontes OpenType SVG | Disable rendering of SVG OpenType fonts:
+// Desativar renderização de fontes OpenType SVG • Disable rendering of SVG OpenType fonts:
     // https://wiki.mozilla.org/SVGOpenTypeFonts
     // https://github.com/iSECPartners/publications/blob/master/presentations/SVG_Security-rdegraaf-bh_us_2014.pdf
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-seguran%C3%A7a-e-privacidade-naur%C3%BA-moko%C4%A9-193eb7f48e
+
 // ----------------------------------------------------
-// THE WHOLE BROKEN CA / SSL / TLS / OCSP / CIPHER MESS
+// TUDO QUEBRADO • THE WHOLE BROKEN CA / SSL / TLS / OCSP / CIPHER MESS
 // ----------------------------------------------------
 
-// Browser test sites: 
+// Sites para teste • Browser test sites: 
     // https://www.ssllabs.com/ssltest/viewMyClient.html
     // https://www.howsmyssl.com/
     // https://badssl.com/
 
-// Block mixed content:
-user_pref("security.mixed_content.block_active_content", true); // (eg. insecure CSS or JS on a HTTPS page - this is enabled by default)
-// user_pref("security.mixed_content.block_display_content", true); // ("passive" content - eg. insecure images on a HTTPS page)
+// Bloqueio de Conteúdo Misto • Block mixed content:
+user_pref("security.mixed_content.block_active_content", true); // (EX: CSS inseguro ou JS em uma página HTTPS - este é ativado por padrão • eg. insecure CSS or JS on a HTTPS page - this is enabled by default)
+// user_pref("security.mixed_content.block_display_content", true); // (conteúdo "passivo" - EX: imagens não seguras em uma página HTTPS • "passive" content - eg. insecure images on a HTTPS page)
 
-// Enforce public key pinning for CAs
+// Forçar fixação de chave pública para CA • Enforce public key pinning for CAs
     // https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning
 user_pref("security.cert_pinning.enforcement_level", 2);
 
-// General SSL/TLS preferences:
+// Preferência gerais de SSl/TLS • General SSL/TLS preferences:
 user_pref("security.ssl.errorReporting.enabled", false); // https://gecko.readthedocs.org/en/latest/browser/base/sslerrorreport/preferences.html
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true); // https://wiki.mozilla.org/Security:Renegotiation#security.ssl.treat_unsafe_negotiation_as_broken
 user_pref("security.tls.unrestricted_rc4_fallback", false); // No thanks, I'd rather fall back to ROT13...
 
-// Cipher suites:
+// Pacotes de criptografia • Cipher suites:
     // Copied from https://github.com/pyllyukko/user.js/blob/master/user.js - possibly outdated information.
     // Cipher suites not present by default in FF43 are omitted. Apparently they aren't supported anyways, according to tests.
 user_pref("security.ssl3.dhe_rsa_aes_128_sha", false);
@@ -241,30 +246,37 @@ user_pref("security.ssl3.rsa_des_ede3_sha", false);
 user_pref("security.ssl3.rsa_rc4_128_md5", false);
 user_pref("security.ssl3.rsa_rc4_128_sha", false);
 
-// Reject SHA1 certs
+// Rejeitar Certificados SHA1 • Reject SHA1 certs
     // https://bugzilla.mozilla.org/show_bug.cgi?id=942515#c32
     // http://www.scmagazine.com/mozilla-pulls-back-on-rejecting-sha-1-certs-outright/article/463913/
 user_pref("security.pki.sha1_enforcement_level", 1);
 
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-certificados-e-criptografia-naur%C3%BA-mboapy-d53d03b6eb85
+
 // ----------------------------------------------------
-// APPEARANCE / UI / UX
+// Aspectos UX/UI e Ferramentas de Desenvolvedor • APPEARANCE / UI / UX
 // ----------------------------------------------------
 
-// Show full URLs in the address bar (including "http://"):
+// URLs completas na barra de endereços • Show full URLs in the address bar (including "http://"):
+    // https://mzl.la/2aMHc3m
+    // https://mzl.la/2aycDvu • https://mzl.la/2aVbgeZ
 user_pref("browser.urlbar.trimURLs", false);
 
-// Get rid of the useless/redundant "Visit (site)" and "(keyword) - search with (engine)" dropdown in the URL bar (since FF43):
+// Se livrar do inútil/redundante • Get rid of the useless/redundant "Visit (site)" and "(keyword) - search with (engine)" dropdown in the URL bar (since FF43):
+    // https://mzl.la/2axYxMS
+    // https://mzl.la/2aHTBnU
 user_pref("browser.urlbar.unifiedcomplete", false);
 
-// Revert to old search bar layout - drop-down list instead of icons:
+// Reverte para o layout de barra de pesquisa antiga - lista drop-down em vez dos ícones • Revert to old search bar layout - drop-down list instead of icons:
     // This choice was removed in FF43 - use the Classic Theme Restorer addon if you want it back.
 // user_pref("browser.search.showOneOffButtons", false);
 
-// Load searches from right-click context menu in background tab:
+// Pesquisas com botão direito em segundo plano • Load searches from right-click context menu in background tab:
+    // https://mzl.la/2apLFGO
     // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
 user_pref("browser.search.context.loadInBackground", true);
 
-// Remove "(site) is now fullscreen" nag message:
+// Remover mensagem "[local] está agora em tela cheia" • Remove "(site) is now fullscreen" nag message:
     // If you fear this might "facilitate phishing", you might not want to be on the internet at all.
     // Before FF43:
 // user_pref("full-screen-api.approval-required", false);
@@ -272,34 +284,39 @@ user_pref("browser.search.context.loadInBackground", true);
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
 
-// Disable fullscreen URL bar animation:
+// Desativar animação da barra de URL em "tela cheia" • Disable fullscreen URL bar animation:
 user_pref("browser.fullscreen.animate", false);
 
-// Disable tab animation:
+// Desativar animação de guias • Disable tab animation:
+    // https://mzl.la/2aMIprB
     // http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
 user_pref("browser.tabs.animate", false);
 
-// Don't warn on closing tabs:
+// Não avisar ao fechar Abas/Guias • Don't warn on closing tabs:
 user_pref("browser.tabs.warnOnClose", false);
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);
 
-// Don't warn on opening about:config:
+// Não avisar ao abrir about:config • Don't warn on opening about:config:
+    // https://mzl.la/2aZsTs4
 user_pref("general.warnOnAboutConfig", false);
 
-// Get rid of "Do you really want to leave this site?" popups:
+// Se Livrando de pop-ups "Você realmente deseja sair desse site?" • Get rid of "Do you really want to leave this site?" popups:
     // https://support.mozilla.org/en-US/questions/1043508
+    // http://forums.mozillazine.org/viewtopic.php?f=38&t=2790281
+    // http://superuser.com/questions/639084/malicious-confirm-navigation-dialogs
 user_pref("dom.disable_beforeunload", true);
 
-// Prevent sites from disabling the default right-click menu:
+// Impedir desativação de menu do botão direito • Prevent sites from disabling the default right-click menu:
+    // http://kb.mozillazine.org/About:config_entries
 user_pref("dom.event.contextmenu.enabled", false);
 
-// Prevent sites/popups from messing with certain UI elements:
+// Evitar que sites/popups mexam em certos elementos UI • Prevent sites/popups from messing with certain UI elements:
     // http://kb.mozillazine.org/Prevent_websites_from_disabling_new_window_features
-user_pref("dom.disable_window_open_feature.location", true); // Always show the URL bar
-user_pref("dom.disable_window_open_feature.resizable", true); // Allow to resize the window
-user_pref("dom.disable_window_open_feature.status", true); // Always show the status bar
+user_pref("dom.disable_window_open_feature.location", true); // Sempre mostrar barra de URL • Always show the URL bar
+user_pref("dom.disable_window_open_feature.resizable", true); // Permitir para redimensionar janelas • Allow to resize the window
+user_pref("dom.disable_window_open_feature.status", true); // Sempre mostrar barra de status • Always show the status bar
 
-// De-crap new tab page, get rid of "directory tiles" ads:
+// Se livrar de "diretório de tiles" • De-crap new tab page, get rid of "directory tiles" ads:
     // http://thenextweb.com/apps/2014/08/28/mozilla-rolls-sponsored-tiles-firefox-nightlys-new-tab-page/
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
@@ -309,10 +326,12 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 
-// Disable (broken) auto-scrolling via middle-click:
+// Desativar auto-rolagem via clique do botão de rolagem • Disable (broken) auto-scrolling via middle-click:
+    // https://mzl.la/2ayexfv
+    // https://mzl.la/2amueex
 user_pref("general.autoScroll", false);
 
-// Start searching while typing:
+// Iniciar a pesquisa durante a digitação • Start searching while typing:
 user_pref("accessibility.typeaheadfind", true); // http://kb.mozillazine.org/Accessibility.typeaheadfind
 user_pref("accessibility.typeaheadfind.flashBar", 0); // http://kb.mozillazine.org/Accessibility.typeaheadfind.flashBar
 
@@ -325,7 +344,7 @@ user_pref("accessibility.typeaheadfind.flashBar", 0); // http://kb.mozillazine.o
 // user_pref("font.name.serif.x-unicode", "Georgia");
 // user_pref("font.name.serif.x-western", "Georgia");
 
-// Artigo • Article https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b
 
 // ----------------------------------------------------
 // DEV TOOLS
