@@ -347,16 +347,16 @@ user_pref("accessibility.typeaheadfind.flashBar", 0); // http://kb.mozillazine.o
 // Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b
 
 // ----------------------------------------------------
-// DEV TOOLS
+// Ferramentas de desenvolvedor • DEV TOOLS
 // ----------------------------------------------------
 
-// Enable eyedropper in dev tools:
+// Habilitar o conta-gotas • Enable eyedropper in dev tools:
 user_pref("devtools.command-button-eyedropper.enabled", true);
 
-// Dark theme for dev tools:
+// Tema escuro • Dark theme for dev tools:
 user_pref("devtools.theme", "dark");
 
-// Artigo • Article https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-aspectos-ux-ui-e-ferramentas-de-desenvolvedor-naur%C3%BA-irundy-4399dd8a945b
 
 // ----------------------------------------------------
 // ADDONS / PLUGINS
@@ -365,47 +365,59 @@ user_pref("devtools.theme", "dark");
 // Instalar addons sem assinatura em todas as versões • Install unsigned addons in Aurora/Dev-Edition/etc:
     // Ironically, this was needed for security-enhancing addons like Privacy Badger, HTTPS Everywhere, etc.
     // Don't be stupid and install just any random unsigned addon.
+    // https://mzl.la/2by0gW0
 user_pref("xpinstall.signatures.required", false);
 
 // Reduzir delay ao instalar add-ons • Speed up security delay when installing add-ons
+    // http://kb.mozillazine.org/Disable_extension_install_delay_-_Firefox
+    // http://www.squarefree.com/2004/07/01/race-conditions-in-security-dialogs
 user_pref("security.dialog_enable_delay", 400);
 
 // Controlar Flash • If installed - ask to activate Flash. If not - don't nag about missing Flash plugin
+    // https://mzl.la/2bIoc50
+    // http://www.ghacks.net/2010/04/07/disable-install-missing-plugins-message-in-firefox
 user_pref("plugin.state.flash", 1);
 user_pref("plugins.notifyMissingFlash", false);
 
 // Desativar verificação de metadados • Disable metadata check phone-home
     // https://wiki.mozilla.org/Extension_Manager:Update_Checking
+    // https://mzl.la/2bhg2RP
+    // https://mzl.la/2bhgpff
 user_pref("extensions.getAddons.cache.enabled", false);
 
-// Artigo • Article https://medium.com/@tavernalinux/firefox-add-ons-e-desativa%C3%A7%C3%A3o-de-blotwares-pete%C4%A9-po-5936ff14d8a2
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-add-ons-e-desativa%C3%A7%C3%A3o-de-blotwares-pete%C4%A9-po-5936ff14d8a2
 
 // ----------------------------------------------------
-// BLOATWARE / UNWANTED "FEATURES" • Bloatware / "Características" Indesejáveis
+// Bloatware / "Características" Indesejáveis • BLOATWARE / UNWANTED "FEATURES"
 // ----------------------------------------------------
 
-// Disable EME, Adobe "Primetime Content Decryption Module" DRM malware: • Desativar EME's, Malware DRM "Módulo descriptografia conteúdo Primetime" da Adobe
+// Desativar EME's, Malware DRM "Módulo descriptografia conteúdo Primetime" da Adobe • Disable EME, Adobe "Primetime Content Decryption Module" DRM malware:
     // http://techdows.com/2015/04/how-to-uninstall-or-remove-adobe-primetime-decryption-module-plugin-from-firefox-38.html
     // Additionally, you might want to delete all traces of "gmp-eme" from your Firefox profile folder.
     // Or simply use "EME-free" builds of Firefox (Windows only): https://ftp.mozilla.org/pub/firefox/releases/latest/win32-EME-free/en-US/
+    // https://mzl.la/2bJUi0N
+    // https://tecnoblog.net/156638/mozilla-drm-videos-firefox/
+    // http://www.w3c.br/Noticias/InformacoesSobreOW3cESobreExtensoesDeMidiaCriptografadaeme
 user_pref("media.gmp-eme-adobe.autoupdate", false);
 user_pref("media.gmp-eme-adobe.enabled", false);
 user_pref("media.eme.apiVisible", false);
 user_pref("media.eme.enabled", false);
 user_pref("browser.eme.ui.enabled", false);
 
-// Disable "Firefox Hello" TokBox/Telefonica WebRTC PUP • Desativar "Firefox Hello" - WebRTC PUP da TokBox/Telefonica
+// Desativar "Firefox Hello" - WebRTC PUP da TokBox/Telefonica • Disable "Firefox Hello" TokBox/Telefonica WebRTC PUP
     // https://www.mozilla.org/en-US/privacy/firefox-hello/
     // https://security.stackexchange.com/questions/94284/how-secure-is-firefox-hello
+    // https://mzl.la/2brm6sr
 user_pref("loop.CSP", "");
 user_pref("loop.enabled", false);
 user_pref("loop.feedback.baseUrl", "");
-user_pref("loop.oauth.google.scope", ""); // What's Google doing in there as well? • O que o Google está fazendo aí?
+user_pref("loop.oauth.google.scope", ""); // O que o Google está fazendo aí? • What's Google doing in there as well?
 user_pref("loop.server", "");
 
 // Disable "Pocket" bloatware • Desativar Blotware "Pocket"
     // http://venturebeat.com/2015/06/09/mozilla-responds-to-firefox-user-backlash-over-pocket-integration/
     // https://www.gnu.gl/blog/Posts/multiple-vulnerabilities-in-pocket/
+    // https://mzl.la/2bBD3Bi
 // Recentemente a Mozilla alterou o início das chaves de "browser" para "extensions"
 user_pref("extensions.pocket.api", "");
 user_pref("extensions.pocket.enabled", false);
@@ -419,6 +431,10 @@ user_pref("extensions.pocket.site", "");
 
 // Disable "social" crap • Desativar Lixo "Social"
     // http://www.ghacks.net/2013/04/10/mozilla-adds-cliqz-msnnow-and-mixi-as-social-providers-to-firefox/
+    // https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/
+    // http://www.computerworld.com/article/2493368/malware-vulnerabilities/mozilla-bakes-facebook-features-into-firefox-17.html
+    // https://blog.mozilla.org/blog/2012/11/20/firefox-introduces-new-social-api-and-previews-integration-with-facebook/
+    // https://wiki.mozilla.org/Firefox_Social_Integration
 user_pref("social.directories", "");
 user_pref("social.remote-install.enabled", false);
 user_pref("social.share.activationPanelEnabled", false);
@@ -426,18 +442,24 @@ user_pref("social.shareDirectory", "");
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.whitelist", "");
 
-// Disable "Reader Mode" • Desativar "Modo Leitura"
+// Desativar "Modo Leitura" • Disable "Reader Mode"
+    // https://mzl.la/2c0ODYj
+    // https://mzl.la/2by1fWc
+    // https://mzl.la/2bhigAw
+    // https://tools.cisco.com/security/center/viewAlert.x?alertId=38228
 user_pref("reader.parse-on-load.enabled", false);
 // user_pref("readinglist.server", "");
 
-// Disable integrated PDF reader • Desativar leitor de PDF integrado
+// Desativar leitor de PDF integrado • Disable integrated PDF reader
     // https://blog.mozilla.org/security/2015/08/06/firefox-exploit-found-in-the-wild/
+    // https://www.reddit.com/r/firefox/comments/4rgbmq/is_it_safer_to_disable_pdfjs_and_use_an_external/
+    // https://access.redhat.com/articles/1563163
     // Por favor não caia na besteiras de usar o blotware ADOBE PDF, utilize leitores externos como Foxit ou SumatraPDF • If you're going to use an external PDF reader, *don't* use Adobe PDF bloatware. Use a sane reader, such as SumatraPDF.
 user_pref("pdfjs.disabled", true);
     // Se você optar por ficar com pdfjs ativado, pelo menos desative a superfície de ataque WebGL. • If you're gonna stick with pdfjs, at least disable its WebGL attack surface
 user_pref("pdfjs.enableWebGL", false);
 
-// Disable various useless and/or intrusive web APIs • Desativar APIs Web inúteis e/ou intrusivas
+// Desativar APIs Web inúteis e/ou intrusivas • Disable various useless and/or intrusive web APIs
     // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
 user_pref("beacon.enabled", false); // https://developer.mozilla.org/en-US/docs/Web/API/navigator.sendBeacon
 user_pref("device.sensors.enabled", false); // https://wiki.mozilla.org/Sensor_API
@@ -455,9 +477,9 @@ user_pref("dom.webnotifications.enabled", false); // https://developer.mozilla.o
 user_pref("dom.webnotifications.serviceworker.enabled", false); // https://developer.mozilla.org/en-US/docs/Web/API/notification
 user_pref("media.webspeech.recognition.enable", false); // https://wiki.mozilla.org/HTML5_Speech_API
 
-// Remove default feed content handlers • Remover alimentação de manipuladores de conteúdo padrão
+// Remover alimentação de manipuladores de conteúdo padrão • Remove default feed content handlers
     // http://kb.mozillazine.org/Browser.contentHandlers.types.*.uri
-    // Yahoo RSS handler • Manipulador RSS do Yahoo
+    // Manipulador RSS do Yahoo • Yahoo RSS handler
 user_pref("browser.contentHandlers.types.0.title", "");
 user_pref("browser.contentHandlers.types.0.type", "");
 user_pref("browser.contentHandlers.types.0.uri", "");
@@ -480,13 +502,14 @@ user_pref("gecko.handlerService.schemes.webcal.0.name", "");
 user_pref("gecko.handlerService.schemes.webcal.0.uriTemplate", "");
 
 // Disable "Snippets" (Mozilla content shown on about:home screen) • Limpeza do do about:home [Tela Inicial]
+    // https://mzl.la/2bhjD2e
     // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
 
-// Artigo • Article https://medium.com/@tavernalinux/firefox-add-ons-e-desativa%C3%A7%C3%A3o-de-blotwares-pete%C4%A9-po-5936ff14d8a2
+// Artigo Completo • Full Article https://medium.com/@tavernalinux/firefox-add-ons-e-desativa%C3%A7%C3%A3o-de-blotwares-pete%C4%A9-po-5936ff14d8a2
 
 // ----------------------------------------------------
-// NEEDS MORE RESEARCH
+// PRECISA DE MAIS INVESTIGAÇãO • NEEDS MORE RESEARCH
 // ----------------------------------------------------
 
 // FF45 disables .onion DNS lookup (for good reason). Probably shouldn't be re-enabled:
